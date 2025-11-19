@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "heroaes:block/jap_map_forestry/jap_map_sapling"
+  }
+}

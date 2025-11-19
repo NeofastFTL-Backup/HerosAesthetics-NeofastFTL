@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "heroaes:block/dou_fir_forestry/dou_fir_planks"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "heroaes:block/thuja_forestry/thuja_sapling"
+  }
+}

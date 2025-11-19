@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "heroaes:block/basswood_forestry/basswood_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "heroaes:block/basswood_forestry/basswood_wood"
+    },
+    "axis=z": {
+      "model": "heroaes:block/basswood_forestry/basswood_wood",
+      "x": 90
+    }
+  }
+}

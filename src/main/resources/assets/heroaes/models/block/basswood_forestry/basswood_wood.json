@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "heroaes:block/basswood_forestry/basswood_log",
+    "side": "heroaes:block/basswood_forestry/basswood_log"
+  }
+}

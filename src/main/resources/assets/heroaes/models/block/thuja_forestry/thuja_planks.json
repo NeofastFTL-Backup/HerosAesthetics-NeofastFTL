@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "heroaes:block/thuja_forestry/thuja_planks"
+  }
+}

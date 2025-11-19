@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: heroaes
+Specification-Vendor: NeofastFTL
+Specification-Version: 1
+Implementation-Title: HerosAesthetics
+Implementation-Version: 1.0-1.20.1
+Implementation-Vendor: NeofastFTL
+Implementation-Timestamp: 2024-10-15T20:36:33+0200
+

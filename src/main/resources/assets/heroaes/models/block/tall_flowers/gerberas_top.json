@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "heroaes:block/tall_flowers/gerberas_top"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "heroaes:block/redwood_forestry/redwood_leaves"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "heroaes:block/redwood_forestry/redwood_planks"
+  }
+}

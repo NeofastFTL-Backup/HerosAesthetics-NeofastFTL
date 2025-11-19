@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "heroaes:block/thuja_forestry/stripped_thuja_log",
+    "side": "heroaes:block/thuja_forestry/stripped_thuja_log"
+  }
+}

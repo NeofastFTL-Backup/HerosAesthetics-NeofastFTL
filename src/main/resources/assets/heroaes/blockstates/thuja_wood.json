@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "heroaes:block/thuja_forestry/thuja_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "heroaes:block/thuja_forestry/thuja_wood"
+    },
+    "axis=z": {
+      "model": "heroaes:block/thuja_forestry/thuja_wood",
+      "x": 90
+    }
+  }
+}

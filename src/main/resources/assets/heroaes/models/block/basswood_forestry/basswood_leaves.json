@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "heroaes:block/basswood_forestry/basswood_leaves"
+  }
+}

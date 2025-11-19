@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "heroaes:block/sil_map_forestry/stripped_sil_map_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "heroaes:block/sil_map_forestry/stripped_sil_map_wood"
+    },
+    "axis=z": {
+      "model": "heroaes:block/sil_map_forestry/stripped_sil_map_wood",
+      "x": 90
+    }
+  }
+}

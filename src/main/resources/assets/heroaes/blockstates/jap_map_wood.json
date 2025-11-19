@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "heroaes:block/jap_map_forestry/jap_map_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "heroaes:block/jap_map_forestry/jap_map_wood"
+    },
+    "axis=z": {
+      "model": "heroaes:block/jap_map_forestry/jap_map_wood",
+      "x": 90
+    }
+  }
+}

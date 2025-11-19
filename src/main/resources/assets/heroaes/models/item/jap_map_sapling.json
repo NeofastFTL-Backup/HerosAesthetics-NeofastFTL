@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "heroaes:block/jap_map_forestry/jap_map_sapling"
+  }
+}
