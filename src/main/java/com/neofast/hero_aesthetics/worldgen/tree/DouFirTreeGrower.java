@@ -9,8 +9,9 @@
 /*    */ 
 /*    */ public class DouFirTreeGrower
 /*    */   extends AbstractTreeGrower {
-/*    */   @Nullable
-/*    */   protected ResourceKey<ConfiguredFeature<?, ?>> m_213888_(RandomSource pRandom, boolean pHasFlowers) {
+/*    */       @Nullable
+    @Override
+/*    */   protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
 /* 14 */     return CustomConfiguredFeaturesDouFir.DOU_FIR_KEY;
 /*    */   }
 /*    */ }

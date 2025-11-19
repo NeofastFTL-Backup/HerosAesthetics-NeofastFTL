@@ -30,7 +30,8 @@ public class ModFlammableRotatedPillarBlock extends RotatedPillarBlock {
         return 5;
     }
   
-  @Nullable
+      @Nullable
+    @Override
   public BlockState getToolModifiedState(BlockState state, UseOnContext context, ToolAction toolAction, boolean simulate) {
     if (context.getItemInHand().getItem() instanceof net.minecraft.world.item.AxeItem) {
       if (state.is((Block) ModBlocks.JAP_MAP_LOG.get())) {

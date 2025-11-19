@@ -14,30 +14,34 @@
 /*    */ import net.minecraft.world.level.levelgen.feature.featuresize.FeatureSize;
 /*    */ import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 /*    */ import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
-/*    */ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-/*    */ 
+/*    */ import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
+
+/*    */
 /*    */ public class CustomConfiguredFeaturesRedWood {
 /* 20 */   public static final ResourceKey<ConfiguredFeature<?, ?>> REDWOOD_KEY = registerKey("redwood");
 /*    */   
 /*    */   public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
-/* 23 */     register(context, REDWOOD_KEY, Feature.f_65760_, (new TreeConfiguration.TreeConfigurationBuilder(
-/* 24 */           (BlockStateProvider)BlockStateProvider.m_191382_((Block)ModBlocks.REDWOOD_LOG.get()), (TrunkPlacer)new StraightTrunkPlacer(5, 4, 3), 
+/* 23 */     register(context, REDWOOD_KEY, Feature.TREE, (new TreeConfiguration.TreeConfigurationBuilder(
+/* 24 */           (BlockStateProvider)BlockStateProvider.simple((Block)ModBlocks.REDWOOD_LOG.get()), (TrunkPlacer)new StraightTrunkPlacer(5, 4, 3),
 /*    */ 
 /*    */           
-/* 27 */           (BlockStateProvider)BlockStateProvider.m_191382_((Block)ModBlocks.REDWOOD_LEAVES.get()), (FoliagePlacer)new BlobFoliagePlacer(
-/* 28 */             (IntProvider)ConstantInt.m_146483_(3), (IntProvider)ConstantInt.m_146483_(2), 3), (FeatureSize)new TwoLayersFeatureSize(1, 0, 2)))
+/* 27 */           (BlockStateProvider)BlockStateProvider.simple((Block)ModBlocks.REDWOOD_LEAVES.get()), (FoliagePlacer)new BlobFoliagePlacer(
+/* 28 */             (IntProvider)ConstantInt.of(3), (IntProvider)ConstantInt.of(2), 3), (FeatureSize)new TwoLayersFeatureSize(1, 0, 2)))
 /*    */         
-/* 30 */         .m_68251_());
+/* 30 */         .build());
 /*    */   }
 /*    */ 
 /*    */   
 /*    */   public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
-/* 35 */     return ResourceKey.m_135785_(Registries.f_256911_, new ResourceLocation("heroaes", name));
+/* 35 */     return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation("heroaes", name));
 /*    */   }
 /*    */ 
 /*    */   
 /*    */   private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, F feature, FC configuration) {
-/* 40 */     context.m_255272_(key, new ConfiguredFeature((Feature)feature, (FeatureConfiguration)configuration));
+/* 40 */     context.register(key, new ConfiguredFeature((Feature)feature, (FeatureConfiguration)configuration));
 /*    */   }
 /*    */ }
 

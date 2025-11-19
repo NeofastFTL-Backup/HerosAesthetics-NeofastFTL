@@ -10,8 +10,9 @@
 /*    */ public class TujaTreeGrower
 /*    */   extends AbstractTreeGrower
 /*    */ {
-/*    */   @Nullable
-/*    */   protected ResourceKey<ConfiguredFeature<?, ?>> m_213888_(RandomSource pRandom, boolean pHasFlowers) {
+/*    */       @Nullable
+    @Override
+/*    */   protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
 /* 15 */     return CustomConfiguredFeaturesThuja.THUJA_KEY;
 /*    */   }
 /*    */ }

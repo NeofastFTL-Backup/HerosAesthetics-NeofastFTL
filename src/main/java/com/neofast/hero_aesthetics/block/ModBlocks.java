@@ -1,20 +1,20 @@
 /*     */ package com.neofast.hero_aesthetics.block;
 /*     */ import java.util.function.Supplier;
 /*     */ import com.neofast.hero_aesthetics.block.custom.ModFlammableRotatedPillarBlock;
+import com.neofast.hero_aesthetics.item.ModItems;
+import com.neofast.hero_aesthetics.worldgen.tree.*;
 import net.minecraft.core.BlockPos;
 /*     */ import net.minecraft.core.Direction;
-/*     */ import net.minecraft.world.item.Item;
+/*     */ import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 /*     */ import net.minecraft.world.level.BlockGetter;
 /*     */ import net.minecraft.world.level.block.*;
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
 /*     */ import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 /*     */ import net.minecraft.world.level.block.state.BlockBehaviour;
 /*     */ import net.minecraft.world.level.block.state.BlockState;
-/*     */ import net.minecraftforge.registries.DeferredRegister;
+/*     */ import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
 /*     */ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 /*     */ 
@@ -22,97 +22,97 @@ import net.minecraftforge.registries.RegistryObject;
 /*  26 */   public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, "heroaes");
 /*     */ 
 /*     */   
-/*  29 */   public static final RegistryObject<Block> CARNATION = registerBlock("carnation", () -> new FlowerBlock((), 5, BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50114_).m_60955_().m_60910_()));
+/*  29 */   public static final RegistryObject<Block> CARNATION = registerBlock("carnation", () ->     new FlowerBlock(() -> MobEffects.DIG_SPEED, 0, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 /*     */ 
 /*     */   
-/*  32 */   public static final RegistryObject<Block> POTTED_CARNATION = BLOCKS.register("potted_carnation", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT)CARNATION, BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50235_).m_60955_()));
-/*     */ 
-/*     */ 
-/*     */   
-/*  36 */   public static final RegistryObject<Block> LILY = registerBlock("lily", () -> new FlowerBlock((), 5, BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50114_).m_60955_().m_60910_()));
-/*     */ 
-/*     */   
-/*  39 */   public static final RegistryObject<Block> POTTED_LILY = BLOCKS.register("potted_lily", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT)CARNATION, BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50235_).m_60955_()));
+/*  32 */   public static final RegistryObject<Block> POTTED_CARNATION = BLOCKS.register("potted_carnation", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CARNATION, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 /*     */ 
 /*     */ 
 /*     */   
-/*  43 */   public static final RegistryObject<Block> PETUNIA = registerBlock("petunia", () -> new FlowerBlock((), 5, BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50114_).m_60955_().m_60910_()));
+/*  36 */   public static final RegistryObject<Block> LILY = registerBlock("lily", () ->     new FlowerBlock(() -> MobEffects.DIG_SPEED, 0, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 /*     */ 
 /*     */   
-/*  46 */   public static final RegistryObject<Block> POTTED_PETUNIA = BLOCKS.register("potted_petunia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT)PETUNIA, BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50235_).m_60955_()));
-/*     */ 
+/*  39 */   public static final RegistryObject<Block> POTTED_LILY = BLOCKS.register("potted_lily", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CARNATION, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 /*     */ 
 /*     */ 
 /*     */   
-/*  51 */   public static final RegistryObject<Block> GERBERAS = registerBlock("gerberas", () -> new DoublePlantBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.FLOWER).m_60955_().m_60910_()));
+/*  43 */   public static final RegistryObject<Block> PETUNIA = registerBlock("petunia", () ->     new FlowerBlock(() -> MobEffects.DIG_SPEED, 0, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
+/*     */ 
+/*     */   
+/*  46 */   public static final RegistryObject<Block> POTTED_PETUNIA = BLOCKS.register("potted_petunia", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), PETUNIA, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 /*     */ 
 /*     */ 
 /*     */ 
 /*     */   
-/*  56 */   public static final RegistryObject<Block> JAP_MAP_LOG = registerBlock("jap_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.OAK_LOG).strength(3.0F)));
-/*     */   
-/*  58 */   public static final RegistryObject<Block> SIL_MAP_LOG = registerBlock("sil_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.OAK_LOG).strength(3.0F)));
-/*     */   
-/*  60 */   public static final RegistryObject<Block> DOU_FIR_LOG = registerBlock("dou_fir_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.OAK_LOG).strength(3.0F)));
-/*     */   
-/*  62 */   public static final RegistryObject<Block> REDWOOD_LOG = registerBlock("redwood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.OAK_LOG).strength(3.0F)));
-/*     */   
-/*  64 */   public static final RegistryObject<Block> THUJA_LOG = registerBlock("thuja_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.OAK_LOG).strength(3.0F)));
+/*  51 */   public static final RegistryObject<Block> GERBERAS = registerBlock("gerberas", () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion().noCollission()));
 /*     */ 
 /*     */ 
 /*     */ 
 /*     */   
-/*  69 */   public static final RegistryObject<Block> JAP_MAP_WOOD = registerBlock("jap_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50011_).strength(3.0F)));
+/*  56 */   public static final RegistryObject<Block> JAP_MAP_LOG = registerBlock("jap_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3.0F)));
 /*     */   
-/*  71 */   public static final RegistryObject<Block> SIL_MAP_WOOD = registerBlock("sil_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50011_).strength(3.0F)));
+/*  58 */   public static final RegistryObject<Block> SIL_MAP_LOG = registerBlock("sil_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3.0F)));
 /*     */   
-/*  73 */   public static final RegistryObject<Block> DOU_FIR_WOOD = registerBlock("dou_fir_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50011_).strength(3.0F)));
+/*  60 */   public static final RegistryObject<Block> DOU_FIR_LOG = registerBlock("dou_fir_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3.0F)));
 /*     */   
-/*  75 */   public static final RegistryObject<Block> REDWOOD_WOOD = registerBlock("redwood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50011_).strength(3.0F)));
+/*  62 */   public static final RegistryObject<Block> REDWOOD_LOG = registerBlock("redwood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3.0F)));
 /*     */   
-/*  77 */   public static final RegistryObject<Block> THUJA_WOOD = registerBlock("thuja_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50011_).strength(3.0F)));
-/*     */ 
-/*     */ 
-/*     */   
-/*  81 */   public static final RegistryObject<Block> STRIPPED_JAP_MAP_LOG = registerBlock("stripped_jap_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50010_).strength(3.0F)));
-/*     */   
-/*  83 */   public static final RegistryObject<Block> STRIPPED_SIL_MAP_LOG = registerBlock("stripped_sil_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50010_).strength(3.0F)));
-/*     */   
-/*  85 */   public static final RegistryObject<Block> STRIPPED_DOU_FIR_LOG = registerBlock("stripped_dou_fir_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50010_).strength(3.0F)));
-/*     */   
-/*  87 */   public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50010_).strength(3.0F)));
-/*     */   
-/*  89 */   public static final RegistryObject<Block> STRIPPED_THUJA_LOG = registerBlock("stripped_thuja_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50010_).strength(3.0F)));
+/*  64 */   public static final RegistryObject<Block> THUJA_LOG = registerBlock("thuja_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3.0F)));
 /*     */ 
 /*     */ 
 /*     */ 
 /*     */   
-/*  94 */   public static final RegistryObject<Block> STRIPPED_JAP_MAP_WOOD = registerBlock("stripped_jap_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50044_).strength(3.0F)));
+/*  69 */   public static final RegistryObject<Block> JAP_MAP_WOOD = registerBlock("jap_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3.0F)));
 /*     */   
-/*  96 */   public static final RegistryObject<Block> STRIPPED_SIL_MAP_WOOD = registerBlock("stripped_sil_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50044_).strength(3.0F)));
+/*  71 */   public static final RegistryObject<Block> SIL_MAP_WOOD = registerBlock("sil_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3.0F)));
 /*     */   
-/*  98 */   public static final RegistryObject<Block> STRIPPED_DOU_FIR_WOOD = registerBlock("stripped_dou_fir_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50044_).strength(3.0F)));
+/*  73 */   public static final RegistryObject<Block> DOU_FIR_WOOD = registerBlock("dou_fir_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3.0F)));
 /*     */   
-/* 100 */   public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50044_).strength(3.0F)));
+/*  75 */   public static final RegistryObject<Block> REDWOOD_WOOD = registerBlock("redwood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3.0F)));
 /*     */   
-/* 102 */   public static final RegistryObject<Block> STRIPPED_THUJA_WOOD = registerBlock("stripped_thuja_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50044_).strength(3.0F)));
+/*  77 */   public static final RegistryObject<Block> THUJA_WOOD = registerBlock("thuja_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3.0F)));
 /*     */ 
 /*     */ 
 /*     */   
-/* 106 */   public static final RegistryObject<Block> JAP_MAP_SAPLING = registerBlock("jap_map_sapling", () -> new SaplingBlock((AbstractTreeGrower)new JapMapTreeGrower(), BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50746_)));
+/*  81 */   public static final RegistryObject<Block> STRIPPED_JAP_MAP_LOG = registerBlock("stripped_jap_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3.0F)));
 /*     */   
-/* 108 */   public static final RegistryObject<Block> SIL_MAP_SAPLING = registerBlock("sil_map_sapling", () -> new SaplingBlock((AbstractTreeGrower)new SilMapTreeGrower(), BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50746_)));
+/*  83 */   public static final RegistryObject<Block> STRIPPED_SIL_MAP_LOG = registerBlock("stripped_sil_map_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3.0F)));
 /*     */   
-/* 110 */   public static final RegistryObject<Block> DOU_FIR_SAPLING = registerBlock("dou_fir_sapling", () -> new SaplingBlock((AbstractTreeGrower)new DouFirTreeGrower(), BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50747_)));
+/*  85 */   public static final RegistryObject<Block> STRIPPED_DOU_FIR_LOG = registerBlock("stripped_dou_fir_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3.0F)));
 /*     */   
-/* 112 */   public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling", () -> new SaplingBlock((AbstractTreeGrower)new RedwoodTreeGrower(), BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50747_)));
+/*  87 */   public static final RegistryObject<Block> STRIPPED_REDWOOD_LOG = registerBlock("stripped_redwood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3.0F)));
 /*     */   
-/* 114 */   public static final RegistryObject<Block> THUJA_SAPLING = registerBlock("thuja_sapling", () -> new SaplingBlock((AbstractTreeGrower)new TujaTreeGrower(), BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50747_)));
+/*  89 */   public static final RegistryObject<Block> STRIPPED_THUJA_LOG = registerBlock("stripped_thuja_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3.0F)));
 /*     */ 
 /*     */ 
 /*     */ 
 /*     */   
-/* 119 */   public static final RegistryObject<Block> JAP_MAP_PLANKS = registerBlock("jap_map_planks", () -> new Block(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50705_))
+/*  94 */   public static final RegistryObject<Block> STRIPPED_JAP_MAP_WOOD = registerBlock("stripped_jap_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3.0F)));
+/*     */   
+/*  96 */   public static final RegistryObject<Block> STRIPPED_SIL_MAP_WOOD = registerBlock("stripped_sil_map_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3.0F)));
+/*     */   
+/*  98 */   public static final RegistryObject<Block> STRIPPED_DOU_FIR_WOOD = registerBlock("stripped_dou_fir_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3.0F)));
+/*     */   
+/* 100 */   public static final RegistryObject<Block> STRIPPED_REDWOOD_WOOD = registerBlock("stripped_redwood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3.0F)));
+/*     */   
+/* 102 */   public static final RegistryObject<Block> STRIPPED_THUJA_WOOD = registerBlock("stripped_thuja_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3.0F)));
+/*     */ 
+/*     */ 
+/*     */   
+/* 106 */   public static final RegistryObject<Block> JAP_MAP_SAPLING = registerBlock("jap_map_sapling", () -> new SaplingBlock(new JapMapTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+/*     */   
+/* 108 */   public static final RegistryObject<Block> SIL_MAP_SAPLING = registerBlock("sil_map_sapling", () -> new SaplingBlock(new SilMapTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+/*     */   
+/* 110 */   public static final RegistryObject<Block> DOU_FIR_SAPLING = registerBlock("dou_fir_sapling", () -> new SaplingBlock(new DouFirTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+/*     */   
+/* 112 */   public static final RegistryObject<Block> REDWOOD_SAPLING = registerBlock("redwood_sapling", () -> new SaplingBlock(new RedwoodTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+/*     */   
+/* 114 */   public static final RegistryObject<Block> THUJA_SAPLING = registerBlock("thuja_sapling", () -> new SaplingBlock(new TujaTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */   
+/* 119 */   public static final RegistryObject<Block> JAP_MAP_PLANKS = registerBlock("jap_map_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -129,7 +129,7 @@ import net.minecraftforge.registries.RegistryObject;
 /* 133 */           return 5;
 /*     */         }
 /*     */       });
-/* 136 */   public static final RegistryObject<Block> SIL_MAP_PLANKS = registerBlock("sil_map_planks", () -> new Block(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50705_))
+/* 136 */   public static final RegistryObject<Block> SIL_MAP_PLANKS = registerBlock("sil_map_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -147,7 +147,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */         }
 /*     */       });
 /*     */   
-/* 154 */   public static final RegistryObject<Block> DOU_FIR_PLANKS = registerBlock("dou_fir_planks", () -> new Block(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50705_))
+/* 154 */   public static final RegistryObject<Block> DOU_FIR_PLANKS = registerBlock("dou_fir_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -164,7 +164,7 @@ import net.minecraftforge.registries.RegistryObject;
 /* 168 */           return 5;
 /*     */         }
 /*     */       });
-/* 171 */   public static final RegistryObject<Block> REDWOOD_PLANKS = registerBlock("redwood_planks", () -> new Block(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50705_))
+/* 171 */   public static final RegistryObject<Block> REDWOOD_PLANKS = registerBlock("redwood_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -181,7 +181,7 @@ import net.minecraftforge.registries.RegistryObject;
 /* 185 */           return 5;
 /*     */         }
 /*     */       });
-/* 188 */   public static final RegistryObject<Block> THUJA_PLANKS = registerBlock("thuja_planks", () -> new Block(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50705_))
+/* 188 */   public static final RegistryObject<Block> THUJA_PLANKS = registerBlock("thuja_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -200,7 +200,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */       });
 /*     */ 
 /*     */   
-/* 207 */   public static final RegistryObject<Block> JAP_MAP_LEAVES = registerBlock("jap_map_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50050_))
+/* 207 */   public static final RegistryObject<Block> JAP_MAP_LEAVES = registerBlock("jap_map_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -217,7 +217,7 @@ import net.minecraftforge.registries.RegistryObject;
 /* 221 */           return 30;
 /*     */         }
 /*     */       });
-/* 224 */   public static final RegistryObject<Block> SIL_MAP_LEAVES = registerBlock("sil_map_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50050_))
+/* 224 */   public static final RegistryObject<Block> SIL_MAP_LEAVES = registerBlock("sil_map_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -235,7 +235,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */         }
 /*     */       });
 /*     */   
-/* 242 */   public static final RegistryObject<Block> DOU_FIR_LEAVES = registerBlock("dou_fir_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50050_))
+/* 242 */   public static final RegistryObject<Block> DOU_FIR_LEAVES = registerBlock("dou_fir_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -253,7 +253,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */         }
 /*     */       });
 /*     */   
-/* 260 */   public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50050_))
+/* 260 */   public static final RegistryObject<Block> REDWOOD_LEAVES = registerBlock("redwood_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -271,7 +271,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */         }
 /*     */       });
 /*     */   
-/* 278 */   public static final RegistryObject<Block> THUJA_LEAVES = registerBlock("thuja_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50050_))
+/* 278 */   public static final RegistryObject<Block> THUJA_LEAVES = registerBlock("thuja_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -290,23 +290,23 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */       });
 /*     */ 
 /*     */   
-/* 297 */   public static final RegistryObject<Block> BASSWOOD_LOG = registerBlock("basswood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.OAK_LOG).strength(3.0F)));
+/* 297 */   public static final RegistryObject<Block> BASSWOOD_LOG = registerBlock("basswood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG).strength(3.0F)));
 /*     */   
-/* 299 */   public static final RegistryObject<Block> STRIPPED_BASSWOOD_LOG = registerBlock("stripped_basswood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50010_).strength(3.0F)));
-/*     */ 
-/*     */ 
-/*     */   
-/* 303 */   public static final RegistryObject<Block> BASSWOOD_WOOD = registerBlock("basswood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50011_).strength(3.0F)));
-/*     */   
-/* 305 */   public static final RegistryObject<Block> STRIPPED_BASSWOOD_WOOD = registerBlock("stripped_basswood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50044_).strength(3.0F)));
+/* 299 */   public static final RegistryObject<Block> STRIPPED_BASSWOOD_LOG = registerBlock("stripped_basswood_log", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG).strength(3.0F)));
 /*     */ 
 /*     */ 
 /*     */   
-/* 309 */   public static final RegistryObject<Block> BASSWOOD_SAPLING = registerBlock("basswood_sapling", () -> new SaplingBlock((AbstractTreeGrower)new BasswoodTreeGrower(), BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50746_)));
+/* 303 */   public static final RegistryObject<Block> BASSWOOD_WOOD = registerBlock("basswood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD).strength(3.0F)));
+/*     */   
+/* 305 */   public static final RegistryObject<Block> STRIPPED_BASSWOOD_WOOD = registerBlock("stripped_basswood_wood", () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD).strength(3.0F)));
 /*     */ 
 /*     */ 
 /*     */   
-/* 313 */   public static final RegistryObject<Block> BASSWOOD_PLANKS = registerBlock("basswood_planks", () -> new Block(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50705_))
+/* 309 */   public static final RegistryObject<Block> BASSWOOD_SAPLING = registerBlock("basswood_sapling", () -> new SaplingBlock(new BasswoodTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+/*     */ 
+/*     */ 
+/*     */   
+/* 313 */   public static final RegistryObject<Block> BASSWOOD_PLANKS = registerBlock("basswood_planks", () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
@@ -325,7 +325,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */       });
 /*     */ 
 /*     */   
-/* 332 */   public static final RegistryObject<Block> BASSWOOD_LEAVES = registerBlock("basswood_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy((BlockBehaviour)Blocks.f_50050_))
+/* 332 */   public static final RegistryObject<Block> BASSWOOD_LEAVES = registerBlock("basswood_leaves", () -> new CherryLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES))
 /*     */       {
 /*     */         public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction)
 /*     */         {
