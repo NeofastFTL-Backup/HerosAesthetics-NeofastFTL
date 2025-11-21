@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "heroaes:block/jap_map_forestry/jap_map_log",
-    "side": "heroaes:block/jap_map_forestry/jap_map_log"
-  }
-}

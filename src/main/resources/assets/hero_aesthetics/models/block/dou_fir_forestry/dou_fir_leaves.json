@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "hero_aesthetics:block/dou_fir_forestry/dou_fir_leaves"
+  }
+}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "heroaes:block/dou_fir_forestry/dou_fir_log_top",
-    "side": "heroaes:block/dou_fir_forestry/dou_fir_log"
-  }
-}

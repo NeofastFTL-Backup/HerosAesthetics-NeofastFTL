@@ -36,7 +36,7 @@ import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacer;
 /*    */ 
 /*    */   
 /*    */   public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
-/* 35 */     return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation("heroaes", name));
+/* 35 */     return ResourceKey.create(Registries.CONFIGURED_FEATURE, new ResourceLocation("hero_aesthetics", name));
 /*    */   }
 /*    */ 
 /*    */   

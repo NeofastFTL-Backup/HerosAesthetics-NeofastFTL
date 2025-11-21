@@ -1,7 +1,0 @@
-{
-  "render_type": "minecraft:cutout",
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "heroaes:block/dou_fir_forestry/dou_fir_sapling"
-  }
-}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "hero_aesthetics:block/jap_map_forestry/stripped_jap_map_log_top",
+    "side": "hero_aesthetics:block/jap_map_forestry/stripped_jap_map_log"
+  }
+}

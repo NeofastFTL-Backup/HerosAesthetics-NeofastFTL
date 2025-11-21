@@ -1,0 +1,58 @@
+
+{
+  "block.hero_aesthetics.jap_map_log": "Japanese Maple Log",
+  "block.hero_aesthetics.stripped_jap_map_log": "Stripped Japanese Maple Log",
+  "block.hero_aesthetics.jap_map_wood": "Japanese Maple Wood",
+  "block.hero_aesthetics.stripped_jap_map_wood": "Stripped Japanese Maple Log",
+  "block.hero_aesthetics.jap_map_leaves": "Japanese Maple Leaves",
+  "block.hero_aesthetics.jap_map_planks": "Japanese Maple Planks",
+  "block.hero_aesthetics.jap_map_sapling": "Japanese Maple Sapling",
+
+  "block.hero_aesthetics.sil_map_log": "Silver Maple Log",
+  "block.hero_aesthetics.stripped_sil_map_log": "Stripped Silver Maple Log",
+  "block.hero_aesthetics.sil_map_wood": "Silver Maple Wood",
+  "block.hero_aesthetics.stripped_sil_map_wood": "Stripped Silver Maple Log",
+  "block.hero_aesthetics.sil_map_leaves": "Silver Maple Leaves",
+  "block.hero_aesthetics.sil_map_planks": "Silver Maple Planks",
+  "block.hero_aesthetics.sil_map_sapling": "Silver Maple Sapling",
+
+  "block.hero_aesthetics.dou_fir_log": "Douglas Fir Log",
+  "block.hero_aesthetics.stripped_dou_fir_log": "Stripped Douglas Fir Log",
+  "block.hero_aesthetics.dou_fir_wood": "Douglas Fir Wood",
+  "block.hero_aesthetics.stripped_dou_fir_wood": "Stripped Douglas Fir Log",
+  "block.hero_aesthetics.dou_fir_leaves": "Douglas Fir Leaves",
+  "block.hero_aesthetics.dou_fir_planks": "Douglas Fir Planks",
+  "block.hero_aesthetics.dou_fir_sapling": "Douglas Fir Sapling",
+
+  "block.hero_aesthetics.redwood_log": "Redwood Log",
+  "block.hero_aesthetics.stripped_redwood_log": "Stripped Redwood Log",
+  "block.hero_aesthetics.redwood_wood": "Redwood Wood",
+  "block.hero_aesthetics.stripped_redwood_wood": "Stripped Redwood Log",
+  "block.hero_aesthetics.redwood_leaves": "Redwood Leaves",
+  "block.hero_aesthetics.redwood_planks": "Redwood Planks",
+  "block.hero_aesthetics.redwood_sapling": "Redwood Sapling",
+
+  "block.hero_aesthetics.thuja_log": "Thuja Log",
+  "block.hero_aesthetics.stripped_thuja_log": "Stripped Thuja Log",
+  "block.hero_aesthetics.thuja_wood": "Thuja Wood",
+  "block.hero_aesthetics.stripped_thuja_wood": "Stripped Thuja Log",
+  "block.hero_aesthetics.thuja_leaves": "Thuja Leaves",
+  "block.hero_aesthetics.thuja_planks": "Thuja Planks",
+  "block.hero_aesthetics.thuja_sapling": "Thuja Sapling",
+
+  "block.hero_aesthetics.basswood_log": "Basswood Log",
+  "block.hero_aesthetics.stripped_basswood_log": "Stripped Basswood Log",
+  "block.hero_aesthetics.basswood_wood": "Basswood Wood",
+  "block.hero_aesthetics.stripped_basswood_wood": "Stripped Basswood Log",
+  "block.hero_aesthetics.basswood_leaves": "Basswood Leaves",
+  "block.hero_aesthetics.basswood_planks": "Basswood Planks",
+  "block.hero_aesthetics.basswood_sapling": "Basswood Sapling",
+
+  "block.hero_aesthetics.carnation": "Carnation",
+  "block.hero_aesthetics.lily": "Lily",
+  "block.hero_aesthetics.petunia": "Petunia",
+  "block.hero_aesthetics.gerberas": "Gerberas",
+
+  "creativetab.hero_greenery_tab": "(Greenery - Hero's Aesthetics)",
+  "creativetab.hero_timbers_tab": "(Quiver me Timbers  - Hero's Aesthetics)"
+}

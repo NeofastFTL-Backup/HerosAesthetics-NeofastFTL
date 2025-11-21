@@ -54,7 +54,7 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */           ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.LILY.getId(), ModBlocks.POTTED_LILY);
 /*     */           ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.PETUNIA.getId(), ModBlocks.POTTED_PETUNIA);
                     ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.GERBERAS.getId(), ModBlocks.POTTED_GERBERAS);
-/*     */           SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, "heroaes", ModdedSurfaceRules.makeRules());
+/*     */           SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModdedSurfaceRules.makeRules());
 /*     */         });
 
 /*     */   }

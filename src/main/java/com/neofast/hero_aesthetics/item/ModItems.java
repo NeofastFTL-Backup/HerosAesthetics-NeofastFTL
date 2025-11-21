@@ -10,7 +10,7 @@
 /*    */ 
 /*    */ public class ModItems
 /*    */ {
-/* 13 */   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "heroaes");
+/* 13 */   public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, "hero_aesthetics");
 /*    */   
 /*    */   public static void register(IEventBus eventBus) {
 /* 16 */     ITEMS.register(eventBus);

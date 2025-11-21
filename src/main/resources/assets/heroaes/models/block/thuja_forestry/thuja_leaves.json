@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/leaves",
-  "textures": {
-    "all": "heroaes:block/thuja_forestry/thuja_leaves"
-  }
-}

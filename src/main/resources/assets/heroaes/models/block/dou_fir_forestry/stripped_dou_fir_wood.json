@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "heroaes:block/dou_fir_forestry/stripped_dou_fir_log",
-    "side": "heroaes:block/dou_fir_forestry/stripped_dou_fir_log"
-  }
-}

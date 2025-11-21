@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hero_aesthetics:block/basswood_forestry/basswood_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hero_aesthetics:block/basswood_forestry/basswood_log"
+    },
+    "axis=z": {
+      "model": "hero_aesthetics:block/basswood_forestry/basswood_log_horizontal",
+      "x": 90
+    }
+  }
+}

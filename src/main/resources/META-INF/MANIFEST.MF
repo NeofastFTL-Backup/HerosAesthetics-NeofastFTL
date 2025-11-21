@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Specification-Title: heroaes
+Specification-Title: hero_aesthetics
 Specification-Vendor: NeofastFTL
 Specification-Version: 1
 Implementation-Title: HerosAesthetics

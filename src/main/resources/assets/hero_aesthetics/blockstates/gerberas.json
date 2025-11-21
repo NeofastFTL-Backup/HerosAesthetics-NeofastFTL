@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "hero_aesthetics:block/tall_flowers/gerberas_bottom"
+    },
+    "half=upper": {
+      "model": "hero_aesthetics:block/tall_flowers/gerberas_top"
+    }
+  }
+}

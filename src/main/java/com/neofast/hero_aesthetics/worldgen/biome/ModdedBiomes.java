@@ -1,5 +1,6 @@
 /*    */ package com.neofast.hero_aesthetics.worldgen.biome;
-/*    */ import net.minecraft.core.registries.Registries;
+/*    */ import com.neofast.hero_aesthetics.HeroAes;
+import net.minecraft.core.registries.Registries;
 /*    */ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 /*    */ import net.minecraft.data.worldgen.BootstapContext;
 /*    */ import net.minecraft.data.worldgen.placement.VegetationPlacements;
@@ -16,7 +17,7 @@ import net.minecraft.world.entity.EntityType;
 /*    */ import net.minecraft.world.level.levelgen.GenerationStep;
 /*    */ 
 /*    */ public class ModdedBiomes {
-/* 18 */   public static final ResourceKey<Biome> TREEVERSE = ResourceKey.create(Registries.BIOME, new ResourceLocation("heroaes", "treeverse"));
+/* 18 */   public static final ResourceKey<Biome> TREEVERSE = ResourceKey.create(Registries.BIOME, new ResourceLocation(HeroAes.MOD_ID, "treeverse"));
 /*    */ 
 /*    */   
 /*    */   public static void boostrap(BootstapContext<Biome> context) {

@@ -1,7 +1,0 @@
-{
-  "render_type": "minecraft:cutout",
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "heroaes:block/jap_map_forestry/jap_map_sapling"
-  }
-}
