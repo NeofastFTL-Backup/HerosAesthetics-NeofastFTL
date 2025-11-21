@@ -7,7 +7,7 @@ import net.minecraft.resources.ResourceLocation;
 /*   */ public class ModdedTerrablender
 /*   */ {
 /*   */   public static void registerBiomes() {
-/* 9 */     Regions.register(new ModdedOverworldRegion(new ResourceLocation(HeroAes.MOD_ID), 5));
+/* 9 */     Regions.register(new ModdedOverworldRegion(new ResourceLocation(HeroAes.MOD_ID, "treeverse"), 5));
 /*   */   }
 /*   */ }
 
