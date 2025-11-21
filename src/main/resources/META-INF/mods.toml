@@ -15,7 +15,7 @@ license="MIT"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="heroaes" #mandatory
+modId="hero_aesthetics" #mandatory
 # The version number of the mod
 version="1.0-1.20.1" #mandatory
 # A display name for the mod
@@ -41,7 +41,7 @@ authors="NeofastFTL" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''Gud'''
 # A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
-[[dependencies.heroaes]] #optional
+[[dependencies.hero_aesthetics]] #optional
     # the modid of the dependency
     modId="forge" #mandatory
     # Does this dependency have to exist - if not, ordering below must be specified
@@ -55,7 +55,7 @@ description='''Gud'''
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
 # Here's another dependency
-[[dependencies.heroaes]]
+[[dependencies.hero_aesthetics]]
     modId="minecraft"
     mandatory=true
     # This version range declares a minimum of the current minecraft version up to but not including the next major version
@@ -63,7 +63,7 @@ description='''Gud'''
     ordering="NONE"
     side="BOTH"
 
-[[dependencies.heroaes]]
+[[dependencies.hero_aesthetics]]
 modId="terrablender"
 mandatory=true
 # This version range declares a minimum of the current minecraft version up to but not including the next major version

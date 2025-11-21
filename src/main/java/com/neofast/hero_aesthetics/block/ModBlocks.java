@@ -32,7 +32,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*  36 */   public static final RegistryObject<Block> LILY = registerBlock("lily", () ->     new FlowerBlock(() -> MobEffects.DIG_SPEED, 0, BlockBehaviour.Properties.copy(Blocks.ALLIUM).noOcclusion().noCollission()));
 /*     */ 
 /*     */   
-/*  39 */   public static final RegistryObject<Block> POTTED_LILY = BLOCKS.register("potted_lily", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.CARNATION, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
+/*  39 */   public static final RegistryObject<Block> POTTED_LILY = BLOCKS.register("potted_lily", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), ModBlocks.LILY, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 /*     */ 
 /*     */ 
 /*     */   
@@ -45,6 +45,7 @@ import net.minecraftforge.registries.RegistryObject;
 /*     */ 
 /*     */   
 /*  51 */   public static final RegistryObject<Block> GERBERAS = registerBlock("gerberas", () -> new DoublePlantBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH).noOcclusion().noCollission()));
+            public static final RegistryObject<Block> POTTED_GERBERAS = BLOCKS.register("potted_gerberas", () -> new FlowerPotBlock(() -> ((FlowerPotBlock) Blocks.FLOWER_POT), GERBERAS, BlockBehaviour.Properties.copy(Blocks.POTTED_ALLIUM).noOcclusion()));
 /*     */ 
 /*     */ 
 /*     */ 
@@ -342,6 +343,8 @@ import net.minecraftforge.registries.RegistryObject;
 /* 346 */           return 30;
 /*     */         }
 /*     */       });
+
+
 /*     */ 
 /*     */ 
 /*     */   

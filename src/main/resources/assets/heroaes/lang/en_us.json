@@ -51,5 +51,8 @@
   "block.heroaes.carnation": "Carnation",
   "block.heroaes.lily": "Lily",
   "block.heroaes.petunia": "Petunia",
-  "block.heroaes.gerberas": "Gerberas"
+  "block.heroaes.gerberas": "Gerberas",
+
+  "creativetab.hero_greenery_tab": "(Greenery - Hero's Aesthetics)",
+  "creativetab.hero_timbers_tab": "(Quiver me Timbers  - Hero's Aesthetics)"
 }
