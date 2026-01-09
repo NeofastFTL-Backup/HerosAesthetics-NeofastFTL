@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "hero_aesthetics:block/redwood_forestry/redwood_sapling"
+      "model": "hero_aesthetics:block/redwood_forestry/redwood_planks"
     }
   }
 }

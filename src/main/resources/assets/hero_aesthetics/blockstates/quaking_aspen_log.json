@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "hero_aesthetics:block/thuja_forestry/thuja_log_horizontal",
+      "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_log_horizontal",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "hero_aesthetics:block/thuja_forestry/thuja_log"
+      "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_log"
     },
     "axis=z": {
-      "model": "hero_aesthetics:block/thuja_forestry/thuja_log_horizontal",
+      "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_log_horizontal",
       "x": 90
     }
   }

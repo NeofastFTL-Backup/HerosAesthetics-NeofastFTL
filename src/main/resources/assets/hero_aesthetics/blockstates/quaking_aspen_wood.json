@@ -1,15 +1,15 @@
 {
   "variants": {
     "axis=x": {
-      "model": "hero_aesthetics:block/thuja_forestry/thuja_wood",
+      "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_wood",
       "x": 90,
       "y": 90
     },
     "axis=y": {
-      "model": "hero_aesthetics:block/thuja_forestry/thuja_wood"
+      "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_wood"
     },
     "axis=z": {
-      "model": "hero_aesthetics:block/thuja_forestry/thuja_wood",
+      "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_wood",
       "x": 90
     }
   }
