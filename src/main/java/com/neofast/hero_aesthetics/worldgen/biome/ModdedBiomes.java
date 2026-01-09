@@ -1,18 +1,15 @@
-/*    */ package com.neofast.hero_aesthetics.worldgen.biome;
+/*    */  package com.neofast.hero_aesthetics.worldgen.biome;
 /*    */ import com.neofast.hero_aesthetics.HeroAes;
-import net.minecraft.core.registries.Registries;
+         import net.minecraft.core.registries.Registries;
 /*    */ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 /*    */ import net.minecraft.data.worldgen.BootstapContext;
 /*    */ import net.minecraft.data.worldgen.placement.VegetationPlacements;
 /*    */ import net.minecraft.resources.ResourceKey;
 /*    */ import net.minecraft.resources.ResourceLocation;
-/*    */ import net.minecraft.sounds.Musics;
-import net.minecraft.world.entity.EntityType;
+         import net.minecraft.world.entity.EntityType;
 /*    */ import net.minecraft.world.entity.MobCategory;
-/*    */ import net.minecraft.world.level.biome.AmbientMoodSettings;
 /*    */ import net.minecraft.world.level.biome.Biome;
 /*    */ import net.minecraft.world.level.biome.BiomeGenerationSettings;
-/*    */ import net.minecraft.world.level.biome.BiomeSpecialEffects;
 /*    */ import net.minecraft.world.level.biome.MobSpawnSettings;
 /*    */ import net.minecraft.world.level.levelgen.GenerationStep;
 /*    */ 
@@ -21,7 +18,7 @@ import net.minecraft.world.entity.EntityType;
 /*    */ 
 /*    */   
 /*    */   public static void boostrap(BootstapContext<Biome> context) {
-/* 22 */     context.register(TREEVERSE, testBiome(context));
+/* 22 */     context.register(TREEVERSE, treeverse(context));
 /*    */   }
 /*    */   
 /*    */   public static void globalOverworldGeneration(BiomeGenerationSettings.Builder builder) {
@@ -33,7 +30,7 @@ import net.minecraft.world.entity.EntityType;
     BiomeDefaultFeatures.addSurfaceFreezing(builder);
 /*    */   }
 /*    */
-/*    */   public static Biome testBiome(BootstapContext<Biome> context) {
+/*    */   public static Biome treeverse(BootstapContext<Biome> context) {
     MobSpawnSettings.Builder spawnBuilder = new MobSpawnSettings.Builder();
 
     spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.WOLF, 5, 4, 4));
@@ -65,9 +62,3 @@ import net.minecraft.world.entity.EntityType;
 /* 71 */    .build();
 /*    */   }
 /*    */ }
-
-
-/* Location:              C:\Users\stefa\Downloads\Hero's Aesthetics 0.3.jar!\com\neofast\hero_aesthetics\worldgen\biome\ModdedBiomes.class
- * Java compiler version: 17 (61.0)
- * JD-Core Version:       1.1.3
- */

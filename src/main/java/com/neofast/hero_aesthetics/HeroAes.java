@@ -33,7 +33,7 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */ {
 /*     */   public static final String MOD_ID = "hero_aesthetics";
 /*  33 */   public static final Logger LOGGER = LogUtils.getLogger();
-/*     */   
+/*     */
 /*     */   public HeroAes() {
 /*  36 */     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 /*     */     
@@ -80,9 +80,3 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */     }
 /*     */   }
 /*     */ }
-
-
-/* Location:              C:\Users\stefa\Downloads\Hero's Aesthetics 0.3.jar!\com\neofast\hero_aesthetics\HeroAes.class
- * Java compiler version: 17 (61.0)
- * JD-Core Version:       1.1.3
- */
