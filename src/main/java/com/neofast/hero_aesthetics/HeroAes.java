@@ -3,20 +3,28 @@
 /*     */ import com.mojang.logging.LogUtils;
 /*     */ import com.neofast.hero_aesthetics.block.ModBlocks;
 /*     */ import com.neofast.hero_aesthetics.item.ModItems;
-/*     */ import com.neofast.hero_aesthetics.tabs.HeroTabGreenery;
-import com.neofast.hero_aesthetics.tabs.HeroTabTimbers;
+/*     */
+import com.neofast.hero_aesthetics.tabs.HeroTabs;
+import com.neofast.hero_aesthetics.worldgen.ModConfiguredFeatures;
 import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */ import com.neofast.hero_aesthetics.worldgen.biome.surface.ModdedSurfaceRules;
 /*     */
 /*     */
 /*     */
-/*     */ import net.minecraft.world.item.CreativeModeTabs;
+/*     */ import net.minecraft.core.HolderLookup;
+import net.minecraft.core.RegistrySetBuilder;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
+import net.minecraft.world.item.CreativeModeTabs;
 /*     */
 /*     */ import net.minecraft.world.level.block.Blocks;
 /*     */ import net.minecraft.world.level.block.FlowerPotBlock;
 /*     */ import net.minecraftforge.api.distmarker.Dist;
 /*     */ import net.minecraftforge.common.MinecraftForge;
-/*     */ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
+/*     */ import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
+import net.minecraftforge.data.event.GatherDataEvent;
+import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 /*     */ import net.minecraftforge.event.server.ServerStartingEvent;
 /*     */ import net.minecraftforge.eventbus.api.IEventBus;
 /*     */ import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -27,7 +35,11 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 /*     */ import org.slf4j.Logger;
 /*     */ import terrablender.api.SurfaceRuleManager;
-/*     */ 
+
+import java.util.Set;
+import java.util.concurrent.CompletableFuture;
+
+/*     */
 /*     */ @Mod("hero_aesthetics")
 /*     */ public class HeroAes
 /*     */ {
@@ -38,15 +50,24 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*  36 */     IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 /*     */     
 /*  38 */     modEventBus.addListener(this::commonSetup);
+              HeroTabs.register(modEventBus);
 /*  39 */     ModItems.register(modEventBus);
 /*  40 */     ModBlocks.register(modEventBus);
-/*  41 */     ModdedTerrablender.registerBiomes();
-              HeroTabGreenery.register(modEventBus);
-              HeroTabTimbers.register(modEventBus);
 /*     */     
 /*  43 */     MinecraftForge.EVENT_BUS.register(this);
 /*  44 */     modEventBus.addListener(this::addCreative);
 /*     */   }
+    @SubscribeEvent
+    public static void gatherData(GatherDataEvent event) {
+        DataGenerator generator = event.getGenerator();
+        PackOutput output = generator.getPackOutput();
+        CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
+
+        generator.addProvider(event.includeServer(), new DatapackBuiltinEntriesProvider(output, lookupProvider,
+                new RegistrySetBuilder()
+                        .add(Registries.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap),
+                Set.of(HeroAes.MOD_ID)));
+    }
 /*     */   
 /*     */   private void commonSetup(FMLCommonSetupEvent event) {
 /*  48 */     event.enqueueWork(() -> {
@@ -54,6 +75,7 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */           ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.LILY.getId(), ModBlocks.POTTED_LILY);
 /*     */           ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.PETUNIA.getId(), ModBlocks.POTTED_PETUNIA);
                     ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.GERBERAS.getId(), ModBlocks.POTTED_GERBERAS);
+                    ModdedTerrablender.registerBiomes();
 /*     */           SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModdedSurfaceRules.makeRules());
 /*     */         });
 
