@@ -1,0 +1,1 @@
+{ "type": "minecraft:crafting_shaped", "pattern": [ "##" ], "key": { "#": { "item": "hero_aesthetics:mahogany_planks" } }, "result": { "item": "hero_aesthetics:mahogany_pressure_plate" } }

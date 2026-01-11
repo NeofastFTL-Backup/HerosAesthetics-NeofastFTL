@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hero_aesthetics:block/cypress_forestry/cypress_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hero_aesthetics:block/cypress_forestry/cypress_wood"
+    },
+    "axis=z": {
+      "model": "hero_aesthetics:block/cypress_forestry/cypress_wood",
+      "x": 90
+    }
+  }
+}
+

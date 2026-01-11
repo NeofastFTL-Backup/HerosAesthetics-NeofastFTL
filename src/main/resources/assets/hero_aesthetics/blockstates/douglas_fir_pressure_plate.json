@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "hero_aesthetics:block/douglas_fir_forestry/douglas_fir_pressure_plate" },
+    "powered=true": { "model": "hero_aesthetics:block/douglas_fir_forestry/douglas_fir_pressure_plate_down" }
+  }
+}

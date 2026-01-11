@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hero_aesthetics:block/ebony_forestry/ebony_sapling"
+  }
+}
+

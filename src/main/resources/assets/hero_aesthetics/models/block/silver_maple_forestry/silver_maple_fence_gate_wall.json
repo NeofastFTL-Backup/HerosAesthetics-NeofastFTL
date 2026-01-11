@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/template_fence_gate_wall", "textures": { "texture": "hero_aesthetics:block/silver_maple_forestry/silver_maple_planks" } }

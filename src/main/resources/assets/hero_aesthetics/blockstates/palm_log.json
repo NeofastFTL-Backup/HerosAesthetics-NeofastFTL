@@ -1,0 +1,17 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hero_aesthetics:block/palm_forestry/palm_log_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hero_aesthetics:block/palm_forestry/palm_log"
+    },
+    "axis=z": {
+      "model": "hero_aesthetics:block/palm_forestry/palm_log_horizontal",
+      "x": 90
+    }
+  }
+}
+

@@ -1,0 +1,1 @@
+{ "type": "minecraft:crafting_shaped", "pattern": [ "#W#", "#W#" ], "key": { "#": { "item": "hero_aesthetics:thuja_planks" }, "W": { "item": "minecraft:stick" } }, "result": { "item": "hero_aesthetics:thuja_fence", "count": 3 } }

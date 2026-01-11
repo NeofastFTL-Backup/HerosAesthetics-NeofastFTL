@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "hero_aesthetics:block/redwood_forestry/redwood_pressure_plate" },
+    "powered=true": { "model": "hero_aesthetics:block/redwood_forestry/redwood_pressure_plate_down" }
+  }
+}

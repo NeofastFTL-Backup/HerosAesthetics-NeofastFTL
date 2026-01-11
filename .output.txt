@@ -1,0 +1,215 @@
+
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         1/10/2026   7:16 PM                basswood_forestry
+d-----         1/11/2026   2:18 AM                cedar_forestry
+d-----         1/11/2026   2:20 AM                cypress_forestry
+d-----         1/10/2026   7:38 PM                douglas_fir_forestry
+d-----         1/11/2026   2:44 AM                ebony_forestry
+d-----         1/10/2026   7:16 PM                flowers
+d-----         1/10/2026   7:38 PM                japanese_maple_forestry
+d-----         1/10/2026   5:01 PM                mahogany_forestry
+d-----         1/10/2026   4:59 PM                palm_forestry
+d-----         1/11/2026   2:18 AM                quaking_aspen_forestry
+d-----         1/10/2026   7:16 PM                redwood_forestry
+d-----         1/10/2026   7:38 PM                silver_maple_forestry
+d-----         1/10/2026   7:16 PM                tall_flowers
+d-----         1/10/2026   5:02 PM                teak_forestry
+d-----         1/10/2026   7:16 PM                thuja_forestry
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\basswood_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            446 basswood_leaves.png
+-a----         1/10/2026   7:16 PM            392 basswood_log.png
+-a----         1/10/2026   7:16 PM            458 basswood_log_top.png
+-a----         1/10/2026   7:16 PM            461 basswood_planks.png
+-a----         1/10/2026   7:16 PM            362 basswood_sapling.png
+-a----         1/10/2026   7:16 PM            568 stripped_basswood_log.png
+-a----         1/10/2026   7:16 PM            430 stripped_basswood_log_top.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\cedar_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/11/2026   1:47 AM            424 cedar_leaves.png
+-a----         1/11/2026   1:47 AM            392 cedar_log.png
+-a----         1/11/2026   1:47 AM            511 cedar_log_top.png
+-a----         1/11/2026   1:47 AM            516 cedar_planks.png
+-a----         1/11/2026   1:47 AM            333 cedar_sapling.png
+-a----         1/11/2026   1:47 AM            569 stripped_cedar_log.png
+-a----         1/11/2026   1:47 AM            460 stripped_cedar_log_top.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\cypress_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/11/2026   2:20 AM            406 cypress_leaves.png
+-a----         1/11/2026   2:20 AM            385 cypress_log.png
+-a----         1/11/2026   2:20 AM            478 cypress_log_top.png
+-a----         1/11/2026   2:20 AM            455 cypress_planks.png
+-a----         1/11/2026   2:20 AM            349 cypress_sapling.png
+-a----         1/11/2026   2:20 AM            525 stripped_cypress_log.png
+-a----         1/11/2026   2:20 AM            435 stripped_cypress_log_top.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\douglas_fir_forest
+    ry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            436 douglas_fir_leaves.png
+-a----         1/10/2026   7:16 PM            193 douglas_fir_log.png
+-a----         1/10/2026   7:16 PM            459 douglas_fir_log_top.png
+-a----         1/10/2026   7:16 PM            447 douglas_fir_planks.png
+-a----         1/10/2026   7:16 PM            412 douglas_fir_sapling.png
+-a----         1/10/2026   7:16 PM            568 stripped_douglas_fir_log.png
+-a----         1/10/2026   7:16 PM            430 stripped_douglas_fir_log_top.
+                                                  png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\ebony_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/11/2026   2:43 AM            453 ebony_leaves.png
+-a----         1/10/2026   7:16 PM            446 ebony_leaves.png~
+-a----         1/11/2026   2:43 AM            394 ebony_log.png
+-a----         1/10/2026   7:16 PM            392 ebony_log.png~
+-a----         1/11/2026   2:43 AM            436 ebony_log_top.png
+-a----         1/10/2026   7:16 PM            458 ebony_log_top.png~
+-a----         1/11/2026   2:43 AM            460 ebony_planks.png
+-a----         1/10/2026   7:16 PM            461 ebony_planks.png~
+-a----         1/11/2026   2:43 AM            391 ebony_sapling.png
+-a----         1/10/2026   7:16 PM            362 ebony_sapling.png~
+-a----         1/11/2026   2:43 AM            601 stripped_ebony_log.png
+-a----         1/10/2026   7:16 PM            568 stripped_ebony_log.png~
+-a----         1/11/2026   2:44 AM            437 stripped_ebony_log_top.png
+-a----         1/11/2026   2:43 AM            456 stripped_ebony_log_top.png~
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\flowers
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            320 carnation.png
+-a----         1/10/2026   7:16 PM            352 lily.png
+-a----         1/10/2026   7:16 PM            296 petunia.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\japanese_maple_for
+    estry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            446 japanese_maple_leaves.png
+-a----         1/10/2026   7:16 PM            392 japanese_maple_log.png
+-a----         1/10/2026   7:16 PM            458 japanese_maple_log_top.png
+-a----         1/10/2026   7:16 PM            461 japanese_maple_planks.png
+-a----         1/10/2026   7:16 PM            362 japanese_maple_sapling.png
+-a----         1/10/2026   7:16 PM            568 stripped_japanese_maple_log.p
+                                                  ng
+-a----         1/10/2026   7:16 PM            430 stripped_japanese_maple_log_t
+                                                  op.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\mahogany_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   5:01 PM            431 mahogany_leaves.png
+-a----         1/10/2026   7:16 PM            446 mahogany_leaves.png~
+-a----         1/10/2026   5:01 PM            398 mahogany_log.png
+-a----         1/10/2026   7:16 PM            392 mahogany_log.png~
+-a----         1/10/2026   5:00 PM            485 mahogany_log_top.png
+-a----         1/10/2026   7:16 PM            458 mahogany_log_top.png~
+-a----         1/10/2026   5:00 PM            492 mahogany_planks.png
+-a----         1/10/2026   7:16 PM            461 mahogany_planks.png~
+-a----         1/10/2026   5:00 PM            358 mahogany_sapling.png
+-a----         1/10/2026   7:16 PM            362 mahogany_sapling.png~
+-a----         1/10/2026   5:00 PM            560 stripped_mahogany_log.png
+-a----         1/10/2026   7:16 PM            568 stripped_mahogany_log.png~
+-a----         1/10/2026   5:00 PM            459 stripped_mahogany_log_top.png
+-a----         1/10/2026   7:16 PM            430 stripped_mahogany_log_top.png
+                                                  ~
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\palm_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   4:59 PM            436 palm_leaves.png
+-a----         1/10/2026   7:16 PM            446 palm_leaves.png~
+-a----         1/10/2026   4:59 PM            386 palm_log.png
+-a----         1/10/2026   7:16 PM            392 palm_log.png~
+-a----         1/10/2026   4:59 PM            464 palm_log_top.png
+-a----         1/10/2026   7:16 PM            458 palm_log_top.png~
+-a----         1/10/2026   4:59 PM            468 palm_planks.png
+-a----         1/10/2026   7:16 PM            461 palm_planks.png~
+-a----         1/10/2026   4:59 PM            364 palm_sapling.png
+-a----         1/10/2026   7:16 PM            362 palm_sapling.png~
+-a----         1/10/2026   4:59 PM            542 stripped_palm_log.png
+-a----         1/10/2026   7:16 PM            568 stripped_palm_log.png~
+-a----         1/10/2026   4:59 PM            433 stripped_palm_log_top.png
+-a----         1/10/2026   7:16 PM            430 stripped_palm_log_top.png~
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\quaking_aspen_fore
+    stry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/11/2026   1:55 AM            418 quaking_aspen_leaves.png
+-a----         1/11/2026   1:55 AM            387 quaking_aspen_log.png
+-a----         1/11/2026   1:54 AM            417 quaking_aspen_log_top.png
+-a----         1/11/2026   1:55 AM            394 quaking_aspen_planks.png
+-a----         1/11/2026   1:54 AM            334 quaking_aspen_sapling.png
+-a----         1/11/2026   1:54 AM            604 stripped_quaking_aspen_log.pn
+                                                  g
+-a----         1/11/2026   1:55 AM            419 stripped_quaking_aspen_log_to
+                                                  p.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\redwood_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            270 redwood_leaves.png
+-a----         1/10/2026   7:16 PM            355 redwood_log.png
+-a----         1/10/2026   7:16 PM            456 redwood_log_top.png
+-a----         1/10/2026   7:16 PM            445 redwood_planks.png
+-a----         1/10/2026   7:16 PM            354 redwood_sapling.png
+-a----         1/10/2026   7:16 PM            584 stripped_redwood_log.png
+-a----         1/10/2026   7:16 PM            443 stripped_redwood_log_top.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\silver_maple_fores
+    try
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            398 silver_maple_leaves.png
+-a----         1/10/2026   7:16 PM            331 silver_maple_log.png
+-a----         1/10/2026   7:16 PM            331 silver_maple_log_top.png
+-a----         1/10/2026   7:16 PM            240 silver_maple_planks.png
+-a----         1/10/2026   7:16 PM            385 silver_maple_sapling.png
+-a----         1/10/2026   7:16 PM            366 stripped_silver_maple_log.png
+-a----         1/10/2026   7:16 PM            346 stripped_silver_maple_log_top
+                                                  .png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\tall_flowers
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            333 gerberas_bottom.png
+-a----         1/10/2026   7:16 PM            314 gerberas_top.png
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\teak_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   5:02 PM            584 stripped_teak_log.png
+-a----         1/10/2026   7:16 PM            568 stripped_teak_log.png~
+-a----         1/10/2026   5:02 PM            458 stripped_teak_log_top.png
+-a----         1/10/2026   7:16 PM            430 stripped_teak_log_top.png~
+-a----         1/10/2026   5:02 PM            419 teak_leaves.png
+-a----         1/10/2026   7:16 PM            446 teak_leaves.png~
+-a----         1/10/2026   5:02 PM            395 teak_log.png
+-a----         1/10/2026   7:16 PM            392 teak_log.png~
+-a----         1/10/2026   5:02 PM            500 teak_log_top.png
+-a----         1/10/2026   7:16 PM            458 teak_log_top.png~
+-a----         1/10/2026   5:02 PM            509 teak_planks.png
+-a----         1/10/2026   7:16 PM            461 teak_planks.png~
+-a----         1/10/2026   5:02 PM            360 teak_sapling.png
+-a----         1/10/2026   7:16 PM            362 teak_sapling.png~
+    Directory: C:\Users\NeofastFTL\IdeaProjects\HerosAesthetics-NeofastFTL_Fix\
+    src\main\resources\assets\hero_aesthetics\textures\block\thuja_forestry
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         1/10/2026   7:16 PM            348 stripped_thuja_log.png
+-a----         1/10/2026   7:16 PM            326 stripped_thuja_log_top.png
+-a----         1/10/2026   7:16 PM            332 thuja_leaves.png
+-a----         1/10/2026   7:16 PM            312 thuja_log.png
+-a----         1/10/2026   7:16 PM            307 thuja_log_top.png
+-a----         1/10/2026   7:16 PM            245 thuja_planks.png
+-a----         1/10/2026   7:16 PM            371 thuja_sapling.png

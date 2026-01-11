@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hero_aesthetics:block/silver_maple_forestry/silver_maple_sapling"
+  }
+}

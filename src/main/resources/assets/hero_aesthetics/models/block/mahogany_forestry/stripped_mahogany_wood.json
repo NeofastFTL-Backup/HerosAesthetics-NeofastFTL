@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "hero_aesthetics:block/mahogany_forestry/stripped_mahogany_log",
+    "side": "hero_aesthetics:block/mahogany_forestry/stripped_mahogany_log"
+  }
+}
+

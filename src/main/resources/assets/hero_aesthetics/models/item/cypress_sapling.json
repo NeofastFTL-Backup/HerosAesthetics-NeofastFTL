@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hero_aesthetics:block/cypress_forestry/cypress_sapling"
+  }
+}
+

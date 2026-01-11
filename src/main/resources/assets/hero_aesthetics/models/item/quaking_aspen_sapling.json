@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_sapling"
+  }
+}
+

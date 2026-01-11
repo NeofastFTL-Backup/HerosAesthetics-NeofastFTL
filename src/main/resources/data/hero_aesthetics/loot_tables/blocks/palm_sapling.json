@@ -1,0 +1,2 @@
+{"type": "minecraft:block","pools": [{"bonus_rolls": 0.0,"entries": [{"type": "minecraft:item","name": "hero_aesthetics:palm_sapling"}],"rolls": 1.0,"conditions": [{"condition": "minecraft:survives_explosion"}]}]}
+

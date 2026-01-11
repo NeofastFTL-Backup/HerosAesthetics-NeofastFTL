@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/template_fence_gate_wall_open", "textures": { "texture": "hero_aesthetics:block/cypress_forestry/cypress_planks" } }

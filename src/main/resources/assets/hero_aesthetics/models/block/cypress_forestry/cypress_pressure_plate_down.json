@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/pressure_plate_down", "textures": { "texture": "hero_aesthetics:block/cypress_forestry/cypress_planks" } }

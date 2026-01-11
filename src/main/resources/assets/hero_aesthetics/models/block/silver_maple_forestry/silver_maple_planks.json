@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hero_aesthetics:block/silver_maple_forestry/silver_maple_planks"
+  }
+}

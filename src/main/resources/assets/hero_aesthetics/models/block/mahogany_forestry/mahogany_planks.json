@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hero_aesthetics:block/mahogany_forestry/mahogany_planks"
+  }
+}
+

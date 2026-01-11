@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_planks"
+  }
+}
+

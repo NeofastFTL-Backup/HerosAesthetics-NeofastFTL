@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "hero_aesthetics:carnation",
+    "hero_aesthetics:lily",
+    "hero_aesthetics:petunia",
+    "hero_aesthetics:marigold",
+    "hero_aesthetics:begonia"
+  ]
+}

@@ -17,20 +17,34 @@ import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvi
 import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
 
 public class ModConfiguredFeatures {
-    public static final ResourceKey<ConfiguredFeature<?, ?>> JAP_MAP_KEY = registerKey("jap_map");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> SIL_MAP_KEY = registerKey("sil_map");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> DOU_FIR_KEY = registerKey("dou_fir");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> JAPANESE_MAPLE_KEY = registerKey("japanese_maple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SILVER_MAPLE_KEY = registerKey("silver_maple");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> DOUGLAS_FIR_KEY = registerKey("douglas_fir");
     public static final ResourceKey<ConfiguredFeature<?, ?>> REDWOOD_KEY = registerKey("redwood");
     public static final ResourceKey<ConfiguredFeature<?, ?>> THUJA_KEY = registerKey("thuja");
     public static final ResourceKey<ConfiguredFeature<?, ?>> BASSWOOD_KEY = registerKey("basswood");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> QUAKING_ASPEN_KEY = registerKey("quaking_aspen");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> PALM_KEY = registerKey("palm");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> EBONY_KEY = registerKey("ebony");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TEAK_KEY = registerKey("teak");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MAHOGANY_KEY = registerKey("mahogany");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CEDAR_KEY = registerKey("cedar");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> CYPRESS_KEY = registerKey("cypress");
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
-        registerTree(context, JAP_MAP_KEY, ModWoodType.JAP_MAP);
-        registerTree(context, SIL_MAP_KEY, ModWoodType.SIL_MAP);
-        registerTree(context, DOU_FIR_KEY, ModWoodType.DOU_FIR);
+        registerTree(context, JAPANESE_MAPLE_KEY, ModWoodType.JAPANESE_MAPLE);
+        registerTree(context, SILVER_MAPLE_KEY, ModWoodType.SILVER_MAPLE);
+        registerTree(context, DOUGLAS_FIR_KEY, ModWoodType.DOUGLAS_FIR);
         registerTree(context, REDWOOD_KEY, ModWoodType.REDWOOD);
         registerTree(context, THUJA_KEY, ModWoodType.THUJA);
         registerTree(context, BASSWOOD_KEY, ModWoodType.BASSWOOD);
+        registerTree(context, QUAKING_ASPEN_KEY, ModWoodType.QUAKING_ASPEN);
+        registerTree(context, PALM_KEY, ModWoodType.PALM);
+        registerTree(context, EBONY_KEY, ModWoodType.EBONY);
+        registerTree(context, TEAK_KEY, ModWoodType.TEAK);
+        registerTree(context, MAHOGANY_KEY, ModWoodType.MAHOGANY);
+        registerTree(context, CEDAR_KEY, ModWoodType.CEDAR);
+        registerTree(context, CYPRESS_KEY, ModWoodType.CYPRESS);
     }
 
     private static void registerTree(BootstapContext<ConfiguredFeature<?, ?>> context, ResourceKey<ConfiguredFeature<?, ?>> key, ModWoodType woodType) {

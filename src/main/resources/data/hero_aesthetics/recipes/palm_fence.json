@@ -1,0 +1,1 @@
+{ "type": "minecraft:crafting_shaped", "pattern": [ "#W#", "#W#" ], "key": { "#": { "item": "hero_aesthetics:palm_planks" }, "W": { "item": "minecraft:stick" } }, "result": { "item": "hero_aesthetics:palm_fence", "count": 3 } }

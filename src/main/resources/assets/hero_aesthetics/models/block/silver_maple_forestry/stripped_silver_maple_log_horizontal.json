@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "hero_aesthetics:block/silver_maple_forestry/stripped_silver_maple_log_top",
+    "side": "hero_aesthetics:block/silver_maple_forestry/stripped_silver_maple_log"
+  }
+}

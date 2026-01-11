@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/stairs", "textures": { "bottom": "hero_aesthetics:block/cypress_forestry/cypress_planks", "top": "hero_aesthetics:block/cypress_forestry/cypress_planks", "side": "hero_aesthetics:block/cypress_forestry/cypress_planks" } }

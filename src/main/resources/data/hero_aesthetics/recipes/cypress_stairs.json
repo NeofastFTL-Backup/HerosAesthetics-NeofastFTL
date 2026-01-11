@@ -1,0 +1,1 @@
+{ "type": "minecraft:crafting_shaped", "pattern": [ "#  ", "## ", "###" ], "key": { "#": { "item": "hero_aesthetics:cypress_planks" } }, "result": { "item": "hero_aesthetics:cypress_stairs", "count": 4 } }

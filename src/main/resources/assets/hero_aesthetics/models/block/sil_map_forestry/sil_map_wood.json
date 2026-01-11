@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "hero_aesthetics:block/sil_map_forestry/sil_map_log",
-    "side": "hero_aesthetics:block/sil_map_forestry/sil_map_log"
-  }
-}

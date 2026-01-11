@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/stairs", "textures": { "bottom": "hero_aesthetics:block/ebony_forestry/ebony_planks", "top": "hero_aesthetics:block/ebony_forestry/ebony_planks", "side": "hero_aesthetics:block/ebony_forestry/ebony_planks" } }

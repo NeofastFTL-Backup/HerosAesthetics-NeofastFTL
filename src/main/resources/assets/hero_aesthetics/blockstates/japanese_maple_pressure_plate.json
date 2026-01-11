@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "hero_aesthetics:block/japanese_maple_forestry/japanese_maple_pressure_plate" },
+    "powered=true": { "model": "hero_aesthetics:block/japanese_maple_forestry/japanese_maple_pressure_plate_down" }
+  }
+}

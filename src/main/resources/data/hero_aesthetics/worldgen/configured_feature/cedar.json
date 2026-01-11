@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:tree",
+  "config": {
+    "decorators": [],
+    "dirt_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "minecraft:dirt"
+      }
+    },
+    "foliage_placer": {
+      "type": "minecraft:random_spread_foliage_placer",
+      "foliage_height": 2,
+      "leaf_placement_attempts": 70,
+      "offset": 12,
+      "radius": 3
+    },
+    "foliage_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "hero_aesthetics:cedar_leaves",
+        "Properties": {
+          "distance": "1",
+          "persistent": "true",
+          "waterlogged": "false"
+        }
+      }
+    },
+    "force_dirt": false,
+    "ignore_vines": true,
+    "minimum_size": {
+      "type": "minecraft:two_layers_feature_size",
+      "limit": 10,
+      "lower_size": 20,
+      "upper_size": 25
+    },
+    "trunk_placer": {
+      "type": "minecraft:upwards_branching_trunk_placer",
+      "base_height": 29,
+      "height_rand_a": 7,
+      "height_rand_b": 0,
+      "extra_branch_start_offset": 10,
+      "extra_branch_steps": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 6,
+          "max_inclusive": 14
+        }
+      },
+      "extra_branch_length": {
+        "type": "minecraft:uniform",
+        "value": {
+          "min_inclusive": 11,
+          "max_inclusive": 16
+        }
+      },
+      "place_branch_per_log_probability": 0.7,
+      "can_grow_through": "#minecraft:logs"
+    },
+    "trunk_provider": {
+      "type": "minecraft:simple_state_provider",
+      "state": {
+        "Name": "hero_aesthetics:cedar_log",
+        "Properties": {
+          "axis": "y"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "hero_aesthetics:lavender",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hero_aesthetics:lavender",
+              "properties": {
+                "half": "lower"
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": 1,
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "hero_aesthetics:lavender"
+                  ],
+                  "state": {
+                    "half": "upper"
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "hero_aesthetics:lavender",
+          "conditions": [
+            {
+              "condition": "minecraft:block_state_property",
+              "block": "hero_aesthetics:lavender",
+              "properties": {
+                "half": "upper"
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": -1,
+              "predicate": {
+                "block": {
+                  "blocks": [
+                    "hero_aesthetics:lavender"
+                  ],
+                  "state": {
+                    "half": "lower"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

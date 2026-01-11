@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hero_aesthetics:block/silver_maple_forestry/stripped_silver_maple_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hero_aesthetics:block/silver_maple_forestry/stripped_silver_maple_wood"
+    },
+    "axis=z": {
+      "model": "hero_aesthetics:block/silver_maple_forestry/stripped_silver_maple_wood",
+      "x": 90
+    }
+  }
+}

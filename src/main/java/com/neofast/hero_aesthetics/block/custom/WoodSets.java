@@ -2,12 +2,11 @@ package com.neofast.hero_aesthetics.block.custom;
 
 import com.neofast.hero_aesthetics.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.CherryLeavesBlock;
-import net.minecraft.world.level.block.SaplingBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
@@ -20,6 +19,10 @@ public class WoodSets {
     public final RegistryObject<Block> planks;
     public final RegistryObject<Block> leaves;
     public final RegistryObject<Block> sapling;
+    public final RegistryObject<Block> stairs;
+    public final RegistryObject<Block> fence;
+    public final RegistryObject<Block> fenceGate;
+    public final RegistryObject<Block> pressurePlate;
 
     public WoodSets(
             String name,
@@ -42,16 +45,31 @@ public class WoodSets {
                         BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
 
         planks = ModBlocks.registerBlock(name + "_planks",
-                () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+                () -> new ModFlammableBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
         leaves = ModBlocks.registerBlock(name + "_leaves",
-                () -> new CherryLeavesBlock(
+                () -> new ModFlammableLeavesBlock(
                         BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
         sapling = ModBlocks.registerBlock(name + "_sapling",
                 () -> new SaplingBlock(treeGrower.get(),
                         BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+        stairs = ModBlocks.registerBlock(name + "_stairs",
+                () -> new ModFlammableStairBlock(() -> planks.get().defaultBlockState(),
+                        BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS)));
+
+        fence = ModBlocks.registerBlock(name + "_fence",
+                () -> new ModFlammableFenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE)));
+
+        fenceGate = ModBlocks.registerBlock(name + "_fence_gate",
+                () -> new ModFlammableFenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), WoodType.OAK));
+
+        pressurePlate = ModBlocks.registerBlock(name + "_pressure_plate",
+                () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                        BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
     }
+
     public void addToCreativeTab(CreativeModeTab.Output output) {
         output.accept(wood.get());
         output.accept(log.get());
@@ -62,5 +80,10 @@ public class WoodSets {
         output.accept(planks.get());
         output.accept(leaves.get());
         output.accept(sapling.get());
+
+        output.accept(stairs.get());
+        output.accept(fence.get());
+        output.accept(fenceGate.get());
+        output.accept(pressurePlate.get());
     }
 }

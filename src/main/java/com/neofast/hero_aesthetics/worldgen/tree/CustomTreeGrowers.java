@@ -8,24 +8,24 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import org.jetbrains.annotations.Nullable;
 
 public class CustomTreeGrowers {
-    public static class JapMap extends AbstractTreeGrower {
+    public static class JapaneseMaple extends AbstractTreeGrower {
         @Override
         protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-            return ModConfiguredFeatures.JAP_MAP_KEY;
+            return ModConfiguredFeatures.JAPANESE_MAPLE_KEY;
         }
     }
 
-    public static class SilMap extends AbstractTreeGrower {
+    public static class SilverMaple extends AbstractTreeGrower {
         @Override
         protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-            return ModConfiguredFeatures.SIL_MAP_KEY;
+            return ModConfiguredFeatures.SILVER_MAPLE_KEY;
         }
     }
 
-    public static class DouFir extends AbstractTreeGrower {
+    public static class DouglasFir extends AbstractTreeGrower {
         @Override
         protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-            return ModConfiguredFeatures.DOU_FIR_KEY;
+            return ModConfiguredFeatures.DOUGLAS_FIR_KEY;
         }
     }
 
@@ -47,6 +47,55 @@ public class CustomTreeGrowers {
         @Override
         protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
             return ModConfiguredFeatures.BASSWOOD_KEY;
+        }
+    }
+
+    public static class QuakingAspen extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.QUAKING_ASPEN_KEY;
+        }
+    }
+
+    public static class Palm extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.PALM_KEY;
+        }
+    }
+
+    public static class Ebony extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.EBONY_KEY;
+        }
+    }
+
+    public static class Teak extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.TEAK_KEY;
+        }
+    }
+
+    public static class Mahogany extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.MAHOGANY_KEY;
+        }
+    }
+
+    public static class Cedar extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.CEDAR_KEY;
+        }
+    }
+
+    public static class Cypress extends AbstractTreeGrower {
+        @Override
+        protected @Nullable ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
+            return ModConfiguredFeatures.CYPRESS_KEY;
         }
     }
 }

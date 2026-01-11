@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/fence_post", "textures": { "texture": "hero_aesthetics:block/douglas_fir_forestry/douglas_fir_planks" } }

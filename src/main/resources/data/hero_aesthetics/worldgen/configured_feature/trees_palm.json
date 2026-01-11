@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "minecraft:oak_checked",
+    "features": [
+      {
+        "chance": 0.8,
+        "feature": "hero_aesthetics:palm_checked"
+      }
+    ]
+  }
+}
+

@@ -1,18 +1,21 @@
 package com.neofast.hero_aesthetics.block.custom;
 
 import com.neofast.hero_aesthetics.block.ModBlocks;
-import com.neofast.hero_aesthetics.worldgen.tree.*;
-import net.minecraft.world.level.block.grower.AbstractTreeGrower;
-
-import java.util.function.Supplier;
 
 public enum ModWoodType {
-    JAP_MAP(ModBlocks.JAP_MAP),
-    SIL_MAP(ModBlocks.SIL_MAP),
-    DOU_FIR(ModBlocks.DOU_FIR),
+    JAPANESE_MAPLE(ModBlocks.JAPANESE_MAPLE),
+    SILVER_MAPLE(ModBlocks.SILVER_MAPLE),
+    DOUGLAS_FIR(ModBlocks.DOUGLAS_FIR),
     REDWOOD(ModBlocks.REDWOOD),
     THUJA(ModBlocks.THUJA),
-    BASSWOOD(ModBlocks.BASSWOOD);
+    BASSWOOD(ModBlocks.BASSWOOD),
+    QUAKING_ASPEN(ModBlocks.QUAKING_ASPEN),
+    PALM(ModBlocks.PALM),
+    EBONY(ModBlocks.EBONY),
+    TEAK(ModBlocks.TEAK),
+    MAHOGANY(ModBlocks.MAHOGANY),
+    CEDAR(ModBlocks.CEDAR),
+    CYPRESS(ModBlocks.CYPRESS);
 
     public final WoodSets set;
 

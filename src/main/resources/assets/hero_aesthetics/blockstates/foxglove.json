@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "hero_aesthetics:block/tall_flowers/foxglove_bottom"
+    },
+    "half=upper": {
+      "model": "hero_aesthetics:block/tall_flowers/foxglove_top"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hero_aesthetics:block/cypress_forestry/cypress_planks"
+  }
+}
+

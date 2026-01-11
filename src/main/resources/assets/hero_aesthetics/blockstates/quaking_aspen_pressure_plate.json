@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_pressure_plate" },
+    "powered=true": { "model": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_pressure_plate_down" }
+  }
+}

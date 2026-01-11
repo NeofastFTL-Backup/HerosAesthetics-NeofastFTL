@@ -75,6 +75,11 @@ import java.util.concurrent.CompletableFuture;
 /*     */           ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.LILY.getId(), ModBlocks.POTTED_LILY);
 /*     */           ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.PETUNIA.getId(), ModBlocks.POTTED_PETUNIA);
                     ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.GERBERAS.getId(), ModBlocks.POTTED_GERBERAS);
+                    ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.MARIGOLD.getId(), ModBlocks.POTTED_MARIGOLD);
+                    ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.BEGONIA.getId(), ModBlocks.POTTED_BEGONIA);
+                    ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.LAVENDER.getId(), ModBlocks.POTTED_LAVENDER);
+                    ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.FOXGLOVE.getId(), ModBlocks.POTTED_FOXGLOVE);
+
                     ModdedTerrablender.registerBiomes();
 /*     */           SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModdedSurfaceRules.makeRules());
 /*     */         });

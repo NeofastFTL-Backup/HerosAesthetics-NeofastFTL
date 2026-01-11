@@ -1,0 +1,8 @@
+{
+  "render_type": "minecraft:cutout",
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "hero_aesthetics:block/cedar_forestry/cedar_sapling"
+  }
+}
+

@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/template_fence_gate", "textures": { "texture": "hero_aesthetics:block/ebony_forestry/ebony_planks" } }

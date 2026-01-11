@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "hero_aesthetics:block/japanese_maple_forestry/japanese_maple_leaves"
+  }
+}

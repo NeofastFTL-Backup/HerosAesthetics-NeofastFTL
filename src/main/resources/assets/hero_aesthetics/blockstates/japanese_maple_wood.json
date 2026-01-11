@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hero_aesthetics:block/japanese_maple_forestry/japanese_maple_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hero_aesthetics:block/japanese_maple_forestry/japanese_maple_wood"
+    },
+    "axis=z": {
+      "model": "hero_aesthetics:block/japanese_maple_forestry/japanese_maple_wood",
+      "x": 90
+    }
+  }
+}

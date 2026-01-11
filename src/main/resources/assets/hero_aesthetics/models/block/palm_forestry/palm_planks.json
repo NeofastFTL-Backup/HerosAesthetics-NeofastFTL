@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "hero_aesthetics:block/palm_forestry/palm_planks"
+  }
+}
+

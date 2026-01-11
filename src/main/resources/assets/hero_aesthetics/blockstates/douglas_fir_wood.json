@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "hero_aesthetics:block/douglas_fir_forestry/douglas_fir_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "hero_aesthetics:block/douglas_fir_forestry/douglas_fir_wood"
+    },
+    "axis=z": {
+      "model": "hero_aesthetics:block/douglas_fir_forestry/douglas_fir_wood",
+      "x": 90
+    }
+  }
+}

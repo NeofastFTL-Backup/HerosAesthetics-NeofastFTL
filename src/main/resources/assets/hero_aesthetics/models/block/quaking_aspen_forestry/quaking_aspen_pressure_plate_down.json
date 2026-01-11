@@ -1,0 +1,1 @@
+{ "parent": "minecraft:block/pressure_plate_down", "textures": { "texture": "hero_aesthetics:block/quaking_aspen_forestry/quaking_aspen_planks" } }

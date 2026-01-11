@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "hero_aesthetics:block/ebony_forestry/ebony_leaves"
+  }
+}
+
