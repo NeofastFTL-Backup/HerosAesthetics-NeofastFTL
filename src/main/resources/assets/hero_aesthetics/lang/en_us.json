@@ -7,6 +7,10 @@
   "block.hero_aesthetics.japanese_maple_leaves": "Japanese Maple Leaves",
   "block.hero_aesthetics.japanese_maple_planks": "Japanese Maple Planks",
   "block.hero_aesthetics.japanese_maple_sapling": "Japanese Maple Sapling",
+  "block.hero_aesthetics.japanese_maple_stairs": "Japanese Maple Stairs",
+  "block.hero_aesthetics.japanese_maple_fence": "Japanese Maple Fence",
+  "block.hero_aesthetics.japanese_maple_fence_gate": "Japanese Maple Fence Gate",
+  "block.hero_aesthetics.japanese_maple_pressure_plate": "Japanese Maple Pressure Plate",
 
   "block.hero_aesthetics.silver_maple_log": "Silver Maple Log",
   "block.hero_aesthetics.stripped_silver_maple_log": "Stripped Silver Maple Log",
@@ -15,6 +19,10 @@
   "block.hero_aesthetics.silver_maple_leaves": "Silver Maple Leaves",
   "block.hero_aesthetics.silver_maple_planks": "Silver Maple Planks",
   "block.hero_aesthetics.silver_maple_sapling": "Silver Maple Sapling",
+  "block.hero_aesthetics.silver_maple_stairs": "Silver Maple Stairs",
+  "block.hero_aesthetics.silver_maple_fence": "Silver Maple Fence",
+  "block.hero_aesthetics.silver_maple_fence_gate": "Silver Maple Fence Gate",
+  "block.hero_aesthetics.silver_maple_pressure_plate": "Silver Maple Pressure Plate",
 
   "block.hero_aesthetics.douglas_fir_log": "Douglas Fir Log",
   "block.hero_aesthetics.stripped_douglas_fir_log": "Stripped Douglas Fir Log",
@@ -23,6 +31,10 @@
   "block.hero_aesthetics.douglas_fir_leaves": "Douglas Fir Leaves",
   "block.hero_aesthetics.douglas_fir_planks": "Douglas Fir Planks",
   "block.hero_aesthetics.douglas_fir_sapling": "Douglas Fir Sapling",
+  "block.hero_aesthetics.douglas_fir_stairs": "Douglas Fir Stairs",
+  "block.hero_aesthetics.douglas_fir_fence": "Douglas Fir Fence",
+  "block.hero_aesthetics.douglas_fir_fence_gate": "Douglas Fir Fence Gate",
+  "block.hero_aesthetics.douglas_fir_pressure_plate": "Douglas Fir Pressure Plate",
 
   "block.hero_aesthetics.redwood_log": "Redwood Log",
   "block.hero_aesthetics.stripped_redwood_log": "Stripped Redwood Log",
@@ -31,6 +43,10 @@
   "block.hero_aesthetics.redwood_leaves": "Redwood Leaves",
   "block.hero_aesthetics.redwood_planks": "Redwood Planks",
   "block.hero_aesthetics.redwood_sapling": "Redwood Sapling",
+  "block.hero_aesthetics.redwood_stairs": "Redwood Stairs",
+  "block.hero_aesthetics.redwood_fence": "Redwood Fence",
+  "block.hero_aesthetics.redwood_fence_gate": "Redwood Fence Gate",
+  "block.hero_aesthetics.redwood_pressure_plate": "Redwood Pressure Plate",
 
   "block.hero_aesthetics.thuja_log": "Thuja Log",
   "block.hero_aesthetics.stripped_thuja_log": "Stripped Thuja Log",
@@ -39,6 +55,10 @@
   "block.hero_aesthetics.thuja_leaves": "Thuja Leaves",
   "block.hero_aesthetics.thuja_planks": "Thuja Planks",
   "block.hero_aesthetics.thuja_sapling": "Thuja Sapling",
+  "block.hero_aesthetics.thuja_stairs": "Thuja Stairs",
+  "block.hero_aesthetics.thuja_fence": "Thuja Fence",
+  "block.hero_aesthetics.thuja_fence_gate": "Thuja Fence Gate",
+  "block.hero_aesthetics.thuja_pressure_plate": "Thuja Pressure Plate",
 
   "block.hero_aesthetics.basswood_log": "Basswood Log",
   "block.hero_aesthetics.stripped_basswood_log": "Stripped Basswood Log",
@@ -47,6 +67,10 @@
   "block.hero_aesthetics.basswood_leaves": "Basswood Leaves",
   "block.hero_aesthetics.basswood_planks": "Basswood Planks",
   "block.hero_aesthetics.basswood_sapling": "Basswood Sapling",
+  "block.hero_aesthetics.basswood_stairs": "Basswood Stairs",
+  "block.hero_aesthetics.basswood_fence": "Basswood Fence",
+  "block.hero_aesthetics.basswood_fence_gate": "Basswood Fence Gate",
+  "block.hero_aesthetics.basswood_pressure_plate": "Basswood Pressure Plate",
 
   "block.hero_aesthetics.quaking_aspen_log": "Quaking Aspen Log",
   "block.hero_aesthetics.stripped_quaking_aspen_log": "Stripped Quaking Aspen Log",
@@ -55,6 +79,10 @@
   "block.hero_aesthetics.quaking_aspen_leaves": "Quaking Aspen Leaves",
   "block.hero_aesthetics.quaking_aspen_planks": "Quaking Aspen Planks",
   "block.hero_aesthetics.quaking_aspen_sapling": "Quaking Aspen Sapling",
+  "block.hero_aesthetics.quaking_aspen_stairs": "Quaking Aspen Stairs",
+  "block.hero_aesthetics.quaking_aspen_fence": "Quaking Aspen Fence",
+  "block.hero_aesthetics.quaking_aspen_fence_gate": "Quaking Aspen Fence Gate",
+  "block.hero_aesthetics.quaking_aspen_pressure_plate": "Quaking Aspen Pressure Plate",
 
   "block.hero_aesthetics.palm_log": "Palm Log",
   "block.hero_aesthetics.stripped_palm_log": "Stripped Palm Log",
@@ -63,6 +91,10 @@
   "block.hero_aesthetics.palm_leaves": "Palm Leaves",
   "block.hero_aesthetics.palm_planks": "Palm Planks",
   "block.hero_aesthetics.palm_sapling": "Palm Sapling",
+  "block.hero_aesthetics.palm_stairs": "Palm Stairs",
+  "block.hero_aesthetics.palm_fence": "Palm Fence",
+  "block.hero_aesthetics.palm_fence_gate": "Palm Fence Gate",
+  "block.hero_aesthetics.palm_pressure_plate": "Palm Pressure Plate",
 
   "block.hero_aesthetics.ebony_log": "Ebony Log",
   "block.hero_aesthetics.stripped_ebony_log": "Stripped Ebony Log",
@@ -71,6 +103,10 @@
   "block.hero_aesthetics.ebony_leaves": "Ebony Leaves",
   "block.hero_aesthetics.ebony_planks": "Ebony Planks",
   "block.hero_aesthetics.ebony_sapling": "Ebony Sapling",
+  "block.hero_aesthetics.ebony_stairs": "Ebony Stairs",
+  "block.hero_aesthetics.ebony_fence": "Ebony Fence",
+  "block.hero_aesthetics.ebony_fence_gate": "Ebony Fence Gate",
+  "block.hero_aesthetics.ebony_pressure_plate": "Ebony Pressure Plate",
 
   "block.hero_aesthetics.teak_log": "Teak Log",
   "block.hero_aesthetics.stripped_teak_log": "Stripped Teak Log",
@@ -79,6 +115,10 @@
   "block.hero_aesthetics.teak_leaves": "Teak Leaves",
   "block.hero_aesthetics.teak_planks": "Teak Planks",
   "block.hero_aesthetics.teak_sapling": "Teak Sapling",
+  "block.hero_aesthetics.teak_stairs": "Teak Stairs",
+  "block.hero_aesthetics.teak_fence": "Teak Fence",
+  "block.hero_aesthetics.teak_fence_gate": "Teak Fence Gate",
+  "block.hero_aesthetics.teak_pressure_plate": "Teak Pressure Plate",
 
   "block.hero_aesthetics.mahogany_log": "Mahogany Log",
   "block.hero_aesthetics.stripped_mahogany_log": "Stripped Mahogany Log",
@@ -87,6 +127,10 @@
   "block.hero_aesthetics.mahogany_leaves": "Mahogany Leaves",
   "block.hero_aesthetics.mahogany_planks": "Mahogany Planks",
   "block.hero_aesthetics.mahogany_sapling": "Mahogany Sapling",
+  "block.hero_aesthetics.mahogany_stairs": "Mahogany Stairs",
+  "block.hero_aesthetics.mahogany_fence": "Mahogany Fence",
+  "block.hero_aesthetics.mahogany_fence_gate": "Mahogany Fence Gate",
+  "block.hero_aesthetics.mahogany_pressure_plate": "Mahogany Pressure Plate",
 
   "block.hero_aesthetics.cedar_log": "Cedar Log",
   "block.hero_aesthetics.stripped_cedar_log": "Stripped Cedar Log",
@@ -95,6 +139,10 @@
   "block.hero_aesthetics.cedar_leaves": "Cedar Leaves",
   "block.hero_aesthetics.cedar_planks": "Cedar Planks",
   "block.hero_aesthetics.cedar_sapling": "Cedar Sapling",
+  "block.hero_aesthetics.cedar_stairs": "Cedar Stairs",
+  "block.hero_aesthetics.cedar_fence": "Cedar Fence",
+  "block.hero_aesthetics.cedar_fence_gate": "Cedar Fence Gate",
+  "block.hero_aesthetics.cedar_pressure_plate": "Cedar Pressure Plate",
 
   "block.hero_aesthetics.cypress_log": "Cypress Log",
   "block.hero_aesthetics.stripped_cypress_log": "Stripped Cypress Log",
@@ -103,6 +151,10 @@
   "block.hero_aesthetics.cypress_leaves": "Cypress Leaves",
   "block.hero_aesthetics.cypress_planks": "Cypress Planks",
   "block.hero_aesthetics.cypress_sapling": "Cypress Sapling",
+  "block.hero_aesthetics.cypress_stairs": "Cypress Stairs",
+  "block.hero_aesthetics.cypress_fence": "Cypress Fence",
+  "block.hero_aesthetics.cypress_fence_gate": "Cypress Fence Gate",
+  "block.hero_aesthetics.cypress_pressure_plate": "Cypress Pressure Plate",
 
   "block.hero_aesthetics.carnation": "Carnation",
   "block.hero_aesthetics.potted_carnation": "Potted Carnation",
@@ -122,6 +174,7 @@
   "block.hero_aesthetics.potted_foxglove": "Potted Foxglove",
 
   "creativetab.hero_greenery_tab": "(Greenery - Hero's Aesthetics)",
-  "creativetab.hero_timbers_tab": "(Quiver me Timbers  - Hero's Aesthetics)"
+  "creativetab.hero_timbers_tab": "(Quiver me Timbers  - Hero's Aesthetics)",
+  "biome.hero_aesthetics.treeverse": "Tree Verse"
 }
 
