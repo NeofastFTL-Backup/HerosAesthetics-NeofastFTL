@@ -48,6 +48,7 @@ public class HeroTabs {
                             pOutput.accept(type.set.fence.get());
                             pOutput.accept(type.set.fenceGate.get());
                             pOutput.accept(type.set.pressurePlate.get());
+                            pOutput.accept(type.set.table.get());
                         }
                     })
                     .build());

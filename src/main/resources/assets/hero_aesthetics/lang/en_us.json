@@ -175,6 +175,18 @@
 
   "creativetab.hero_greenery_tab": "(Greenery - Hero's Aesthetics)",
   "creativetab.hero_timbers_tab": "(Quiver me Timbers  - Hero's Aesthetics)",
-  "biome.hero_aesthetics.treeverse": "Tree Verse"
+  "biome.hero_aesthetics.treeverse": "Tree Verse",
+  "block.hero_aesthetics.cypress_table": "Cypress Table",
+  "block.hero_aesthetics.basswood_table": "Basswood Table",
+  "block.hero_aesthetics.japanese_maple_table": "Japanese Maple Table",
+  "block.hero_aesthetics.silver_maple_table": "Silver Maple Table",
+  "block.hero_aesthetics.douglas_fir_table": "Douglas Fir Table",
+  "block.hero_aesthetics.redwood_table": "Redwood Table",
+  "block.hero_aesthetics.thuja_table": "Thuja Table",
+  "block.hero_aesthetics.ebony_table": "Ebony Table",
+  "block.hero_aesthetics.teak_table": "Teak Table",
+  "block.hero_aesthetics.mahogany_table": "Mahogany Table",
+  "block.hero_aesthetics.cedar_table": "Cedar Table",
+  "block.hero_aesthetics.palm_table": "Palm Table"
 }
 

@@ -2,7 +2,10 @@
 /*     */ 
 /*     */ import com.mojang.logging.LogUtils;
 /*     */ import com.neofast.hero_aesthetics.block.ModBlocks;
-/*     */ import com.neofast.hero_aesthetics.item.ModItems;
+/*     */ import com.neofast.hero_aesthetics.block.custom.ModWoodType;
+import com.neofast.hero_aesthetics.block.custom.WoodSets;
+import com.neofast.hero_aesthetics.block.custom.WoodenTable;
+import com.neofast.hero_aesthetics.item.ModItems;
 /*     */
 import com.neofast.hero_aesthetics.tabs.HeroTabs;
 import com.neofast.hero_aesthetics.worldgen.ModConfiguredFeatures;
@@ -11,7 +14,9 @@ import com.neofast.hero_aesthetics.worldgen.biome.ModdedTerrablender;
 /*     */
 /*     */
 /*     */
-/*     */ import net.minecraft.core.HolderLookup;
+/*     */ import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.DataGenerator;
@@ -79,7 +84,6 @@ import java.util.concurrent.CompletableFuture;
                     ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.BEGONIA.getId(), ModBlocks.POTTED_BEGONIA);
                     ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.LAVENDER.getId(), ModBlocks.POTTED_LAVENDER);
                     ((FlowerPotBlock)Blocks.FLOWER_POT).addPlant(ModBlocks.FOXGLOVE.getId(), ModBlocks.POTTED_FOXGLOVE);
-
                     ModdedTerrablender.registerBiomes();
 /*     */           SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, ModdedSurfaceRules.makeRules());
 /*     */         });
@@ -104,6 +108,6 @@ import java.util.concurrent.CompletableFuture;
 /*     */   {
 /*     */     @SubscribeEvent
 /*     */     public static void onClientSetup(FMLClientSetupEvent event) {
-/*     */     }
-/*     */   }
-/*     */ }
+    }
+ }
+}

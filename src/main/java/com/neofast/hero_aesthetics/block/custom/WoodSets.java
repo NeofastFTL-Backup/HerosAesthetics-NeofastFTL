@@ -3,10 +3,14 @@ package com.neofast.hero_aesthetics.block.custom;
 import com.neofast.hero_aesthetics.block.ModBlocks;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.entity.BlockEntityType;
+import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.properties.WoodType;
+import net.minecraft.world.level.material.MapColor;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
@@ -23,7 +27,7 @@ public class WoodSets {
     public final RegistryObject<Block> fence;
     public final RegistryObject<Block> fenceGate;
     public final RegistryObject<Block> pressurePlate;
-
+    public final RegistryObject<Block> table;
     public WoodSets(
             String name,
             Supplier<AbstractTreeGrower> treeGrower
@@ -68,6 +72,8 @@ public class WoodSets {
         pressurePlate = ModBlocks.registerBlock(name + "_pressure_plate",
                 () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                         BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
+        table = ModBlocks.registerBlock(name + "_table",
+                () -> new WoodenTable(BlockBehaviour.Properties.of().mapColor(MapColor.WOOD).instrument(NoteBlockInstrument.BASS).strength(2.5F).sound(SoundType.WOOD).ignitedByLava(), () -> BlockEntityType.CHEST));
     }
 
     public void addToCreativeTab(CreativeModeTab.Output output) {
@@ -85,5 +91,7 @@ public class WoodSets {
         output.accept(fence.get());
         output.accept(fenceGate.get());
         output.accept(pressurePlate.get());
+
+        output.accept(table.get());
     }
 }
