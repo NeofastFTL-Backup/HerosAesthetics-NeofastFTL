@@ -1,0 +1,9 @@
+{
+  "doorbell_ring": {
+    "category": "block",
+    "subtitle": "subtitles.hero_aesthetics.doorbell_ring",
+    "sounds": [
+      "hero_aesthetics:doorbell_ring"
+    ]
+  }
+}

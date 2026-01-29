@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "hero_aesthetics:block/item_display_block" }
+  }
+}
