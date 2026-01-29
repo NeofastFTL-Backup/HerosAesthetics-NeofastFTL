@@ -187,6 +187,8 @@
   "block.hero_aesthetics.teak_table": "Teak Table",
   "block.hero_aesthetics.mahogany_table": "Mahogany Table",
   "block.hero_aesthetics.cedar_table": "Cedar Table",
-  "block.hero_aesthetics.palm_table": "Palm Table"
+  "block.hero_aesthetics.palm_table": "Palm Table",
+  "block.hero_aesthetics.item_display_block": "Item Display Block",
+  "block.hero_aesthetics.doorbell": "Doorbell"
 }
 

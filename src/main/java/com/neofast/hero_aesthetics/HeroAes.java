@@ -3,6 +3,8 @@
 /*     */ import com.mojang.logging.LogUtils;
 /*     */ import com.neofast.hero_aesthetics.block.ModBlocks;
 /*     */ import com.neofast.hero_aesthetics.block.custom.ModWoodType;
+import com.neofast.hero_aesthetics.block.entity.ModBlockEntities;
+import com.neofast.hero_aesthetics.client.renderer.ItemDisplayBlockEntityRenderer;
 import com.neofast.hero_aesthetics.block.custom.WoodSets;
 import com.neofast.hero_aesthetics.block.custom.WoodenTable;
 import com.neofast.hero_aesthetics.item.ModItems;
@@ -37,8 +39,9 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 /*     */ import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
 /*     */ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 /*     */ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.client.event.EntityRenderersEvent;
 /*     */ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-/*     */ import org.slf4j.Logger;
+import org.slf4j.Logger;
 /*     */ import terrablender.api.SurfaceRuleManager;
 
 import java.util.Set;
@@ -58,6 +61,8 @@ import java.util.concurrent.CompletableFuture;
               HeroTabs.register(modEventBus);
 /*  39 */     ModItems.register(modEventBus);
 /*  40 */     ModBlocks.register(modEventBus);
+            ModBlockEntities.register(modEventBus);
+            com.neofast.hero_aesthetics.sound.ModSounds.register(modEventBus);
 /*     */     
 /*  43 */     MinecraftForge.EVENT_BUS.register(this);
 /*  44 */     modEventBus.addListener(this::addCreative);
@@ -109,5 +114,11 @@ import java.util.concurrent.CompletableFuture;
 /*     */     @SubscribeEvent
 /*     */     public static void onClientSetup(FMLClientSetupEvent event) {
     }
- }
+
+    @SubscribeEvent
+    public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+        event.registerBlockEntityRenderer(ModBlockEntities.ITEM_DISPLAY_BE.get(), ItemDisplayBlockEntityRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.DOORBELL_BE.get(), com.neofast.hero_aesthetics.client.renderer.DoorbellBlockEntityRenderer::new);
+    }
+/*     */  }
 }

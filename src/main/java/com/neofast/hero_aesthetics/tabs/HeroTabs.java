@@ -50,6 +50,8 @@ public class HeroTabs {
                             pOutput.accept(type.set.pressurePlate.get());
                             pOutput.accept(type.set.table.get());
                         }
+                        pOutput.accept(ModBlocks.ITEM_DISPLAY_BLOCK.get());
+                        pOutput.accept(ModBlocks.DOORBELL.get());
                     })
                     .build());
 

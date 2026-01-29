@@ -1,6 +1,7 @@
 /*     */ package com.neofast.hero_aesthetics.block;
 /*     */ import java.util.function.Supplier;
 /*     */
+import com.neofast.hero_aesthetics.block.custom.ItemDisplayBlock;
 import com.neofast.hero_aesthetics.block.custom.WoodSets;
 import com.neofast.hero_aesthetics.item.ModItems;
 import com.neofast.hero_aesthetics.worldgen.tree.*;
@@ -82,6 +83,12 @@ import net.minecraftforge.registries.RegistryObject;
             new WoodSets("cypress", CustomTreeGrowers.Cypress::new);
 
 
+
+    public static final RegistryObject<Block> ITEM_DISPLAY_BLOCK = registerBlock("item_display_block",
+            () -> new ItemDisplayBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).noOcclusion()));
+
+    public static final RegistryObject<Block> DOORBELL = registerBlock("doorbell",
+            () -> new com.neofast.hero_aesthetics.block.custom.DoorbellBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).noOcclusion()));
 
 /*     */   public static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
 /* 353 */     RegistryObject<T> toReturn = BLOCKS.register(name, block);
